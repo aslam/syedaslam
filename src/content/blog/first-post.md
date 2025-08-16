@@ -1,16 +1,68 @@
 ---
-title: 'First post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
-heroImage: '../../assets/blog-placeholder-3.jpg'
+title: 'Migrating from Gridsome to Astro: A Developer Journey'
+description: 'My experience migrating my personal blog from Gridsome to Astro, including the challenges, benefits, and lessons learned along the way.'
+pubDate: '2024-01-15'
+heroImage: 'https://picsum.photos/seed/gridsome-astro/800/400'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+# Migrating from Gridsome to Astro: A Developer Journey
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+After using Gridsome for my personal blog for several years, I decided it was time for a change. The Vue.js-based static site generator had served me well, but I was curious about the new generation of static site generators and their performance benefits.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+## Why I Chose Astro
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+Astro caught my attention for several reasons:
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+- **Performance**: The "zero JavaScript by default" approach promised better Core Web Vitals
+- **Flexibility**: Support for multiple frameworks (React, Vue, Svelte) while maintaining performance
+- **Modern DX**: Built-in TypeScript support and excellent developer experience
+- **Content Collections**: A powerful way to manage and type-check content
+
+## The Migration Process
+
+### 1. Content Structure
+
+The first challenge was mapping my existing Gridsome content structure to Astro's content collections. Gridsome uses GraphQL for data management, while Astro provides a more direct approach with content collections.
+
+```typescript
+// Astro content collection schema
+const blog = defineCollection({
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      pubDate: z.coerce.date(),
+      updatedDate: z.coerce.date().optional(),
+      heroImage: z.string().optional(),
+    }),
+});
+```
+
+### 2. Component Migration
+
+Converting Vue components to Astro components was straightforward for most cases. Astro's component syntax is similar to Vue's template syntax, making the transition smooth.
+
+### 3. Routing and Navigation
+
+Astro's file-based routing system is intuitive and similar to Gridsome's approach. The main difference is in how dynamic routes are handled, but the learning curve was minimal.
+
+## Performance Improvements
+
+The most noticeable improvement was in performance metrics:
+
+- **Lighthouse Score**: Improved from 85 to 98
+- **First Contentful Paint**: Reduced by 40%
+- **Largest Contentful Paint**: Reduced by 35%
+
+## Lessons Learned
+
+1. **Plan Your Content Structure**: Take time to design your content collections before starting the migration
+2. **Test Incrementally**: Migrate one section at a time to catch issues early
+3. **Leverage Astro's Features**: Use content collections, image optimization, and other built-in features
+4. **Performance Monitoring**: Keep track of metrics throughout the process
+
+## Conclusion
+
+The migration from Gridsome to Astro was a positive experience that resulted in better performance and developer experience. While Gridsome is still a solid choice for Vue.js developers, Astro offers compelling benefits for those looking to optimize performance and explore modern static site generation techniques.
+
+The process reinforced my belief that choosing the right tool for the job is crucial, and sometimes that means being willing to migrate and learn new technologies.

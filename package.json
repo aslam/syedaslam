@@ -12,7 +12,13 @@
     "@astrojs/mdx": "^4.3.3",
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.5.0",
+    "@tailwindcss/typography": "0.5.16",
     "astro": "^5.13.1",
-    "sharp": "^0.34.2"
+    "astro-paper": "2.2.0",
+    "astrofy": "3.0.0",
+    "daisyui": "5.0.50",
+    "dayjs": "1.11.13",
+    "sharp": "^0.34.2",
+    "tailwindcss": "3.4.17"
   }
 }

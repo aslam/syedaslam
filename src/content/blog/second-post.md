@@ -1,16 +1,151 @@
 ---
-title: 'Second post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 15 2022'
-heroImage: '../../assets/blog-placeholder-4.jpg'
+title: 'The Future of Web Performance: Beyond Core Web Vitals'
+description: 'Exploring emerging performance metrics and optimization strategies that will shape the next generation of web applications.'
+pubDate: '2024-01-10'
+heroImage: 'https://picsum.photos/seed/web-performance/800/400'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+# The Future of Web Performance: Beyond Core Web Vitals
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Core Web Vitals have become the standard for measuring web performance, but the web is evolving rapidly. As we look toward the future, new metrics and optimization strategies are emerging that will redefine what "fast" means on the web.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+## Beyond the Current Metrics
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+While Core Web Vitals (LCP, FID, CLS) provide a solid foundation, they don't tell the complete story of user experience. Here are some emerging areas that deserve attention:
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+### 1. Interaction to Next Paint (INP)
+
+INP measures the time from when a user interacts with a page to when the next frame is painted. This metric is crucial for applications with frequent user interactions.
+
+```javascript
+// Example of measuring INP
+new PerformanceObserver((entryList) => {
+  for (const entry of entryList.getEntries()) {
+    if (entry.interactionId) {
+      console.log('INP:', entry.duration);
+    }
+  }
+}).observe({ entryTypes: ['interaction'] });
+```
+
+### 2. Cumulative Layout Shift (CLS) Evolution
+
+The current CLS measurement is being refined to better account for user interactions and intentional layout changes. Future versions will distinguish between user-triggered and unexpected shifts.
+
+### 3. Resource Loading Priorities
+
+Modern browsers support resource hints and priorities that can significantly impact performance:
+
+```html
+<!-- Preload critical resources -->
+<link rel="preload" href="/critical.css" as="style">
+<link rel="preload" href="/hero-image.jpg" as="image">
+
+<!-- Prefetch non-critical resources -->
+<link rel="prefetch" href="/blog-posts.json">
+```
+
+## Emerging Performance Strategies
+
+### 1. Partial Hydration
+
+Instead of hydrating entire pages, modern frameworks are moving toward partial hydration strategies:
+
+- **Islands Architecture**: Only hydrate interactive components
+- **Progressive Enhancement**: Start with static content, enhance progressively
+- **Selective Hydration**: Hydrate based on user interaction patterns
+
+### 2. Edge Computing and CDNs
+
+The future of performance lies in bringing computation closer to users:
+
+```javascript
+// Example of edge-side rendering
+export async function onRequest({ request, env }) {
+  const url = new URL(request.url);
+  const response = await env.ASSETS.fetch(request);
+  
+  // Modify response at the edge
+  const html = await response.text();
+  const modifiedHtml = html.replace(
+    /<title>.*<\/title>/,
+    `<title>${url.pathname} - My Blog</title>`
+  );
+  
+  return new Response(modifiedHtml, response);
+}
+```
+
+### 3. Intelligent Resource Loading
+
+AI-powered resource loading strategies are emerging:
+
+- **Predictive Loading**: Load resources based on user behavior patterns
+- **Adaptive Quality**: Serve different quality assets based on network conditions
+- **Smart Caching**: Intelligent cache invalidation and prefetching
+
+## Tools and Monitoring
+
+### 1. Real User Monitoring (RUM)
+
+Synthetic testing isn't enough. Real user data provides insights into actual performance:
+
+```javascript
+// Example RUM implementation
+class PerformanceMonitor {
+  constructor() {
+    this.metrics = {};
+    this.observe();
+  }
+  
+  observe() {
+    // Observe various performance metrics
+    new PerformanceObserver((list) => {
+      for (const entry of list.getEntries()) {
+        this.recordMetric(entry);
+      }
+    }).observe({ entryTypes: ['navigation', 'resource', 'paint'] });
+  }
+  
+  recordMetric(entry) {
+    // Send to analytics service
+    this.sendToAnalytics(entry);
+  }
+}
+```
+
+### 2. Performance Budgets
+
+Setting and enforcing performance budgets ensures consistent performance:
+
+```json
+{
+  "budgets": [
+    {
+      "type": "initial",
+      "maximumWarning": "500kb",
+      "maximumError": "1mb"
+    },
+    {
+      "type": "largestContentfulPaint",
+      "maximumWarning": "2.5s",
+      "maximumError": "4s"
+    }
+  ]
+}
+```
+
+## Looking Ahead
+
+The future of web performance is about:
+
+1. **User-Centric Metrics**: Metrics that directly correlate with user satisfaction
+2. **Intelligent Optimization**: AI-powered performance optimization
+3. **Edge Computing**: Bringing performance optimizations closer to users
+4. **Sustainability**: Performance that considers environmental impact
+
+## Conclusion
+
+While Core Web Vitals provide a solid foundation, the future of web performance requires looking beyond these metrics. By embracing emerging strategies, tools, and monitoring approaches, we can create web experiences that are not just fast, but truly delightful for users.
+
+The key is to stay informed about new developments and be willing to experiment with cutting-edge performance optimization techniques.
