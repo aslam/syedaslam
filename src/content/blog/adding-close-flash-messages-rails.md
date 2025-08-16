@@ -5,7 +5,6 @@ pubDate: '2011-02-19'
 updatedDate: '2025-08-16'
 author: 'Syed Aslam'
 heroImage: 'https://res.cloudinary.com/syed-aslam/image/upload/v1556432472/art-camera-close-up-1413906_vdrfdt.jpg'
-layout: '@/layouts/BlogPost.astro'
 tags: ['rails', 'flash', 'ui']
 canonical: 'https://syedaslam.com/blog/adding-close-flash-messages-rails/'
 ---

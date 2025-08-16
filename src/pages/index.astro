@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Card from "../components/Card.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 
@@ -15,39 +15,43 @@ const sortedPosts = posts
 	description={SITE_DESCRIPTION}
 	sideBarActiveItemID="home"
 >
-	<main class="container mx-auto lg:px-6 px-6 py-12">
-		<div class="flex flex-col items-center justify-center text-center">
+	<main class="container mx-auto lg:px-6 px-6 py-6">
+		<div class="flex flex-col justify-center">
+			<div class="text-xl py-1">Hey there 👋</div>
 			<h1 class="text-4xl lg:text-6xl font-bold">
-				Hi, I'm <span class="text-primary">Syed Aslam</span> 👋
+				I'm <span class="text-primary">Syed Aslam</span>
 			</h1>
 			<p class="text-xl lg:text-2xl text-base-content/80 mt-4 max-w-2xl">
-				Developer passionate about creating meaningful software and sharing knowledge through writing.
+				Developer passionate about creating meaningful software and sharing knowledge through writing. I hope you find it useful!
 			</p>
 			<div class="flex gap-4 mt-8">
+				<a href="https://x.com/syedaslam" class="btn">
+					Let's connect!
+				</a>
 				<a href="/blog" class="btn btn-primary">
 					Read My Blog
-				</a>
-				<a href="/about" class="btn btn-outline">
-					Learn More
 				</a>
 			</div>
 		</div>
 
-		<div class="divider my-16"></div>
+		<div class="divider my-12"></div>
 
 		<section>
-			<h2 class="text-3xl font-bold text-center mb-12">Latest Posts</h2>
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-				{sortedPosts.map((post, index) => (
-					<Card
+			<div class="text-3xl w-full font-bold mb-5 mt-10">Latest Posts</div>
+			{sortedPosts.map((post, index) => (
+				<>
+					<HorizontalCard
 						title={post.data.title}
-						description={post.data.description}
+						desc={post.data.description}
 						img={post.data.heroImage || `https://picsum.photos/seed/post-${index}/400/200`}
 						url={`/blog/${post.id}/`}
 						tags={["Technology", "Development"]}
+						target="_self"
+						badge={post.data.badge}
 					/>
-				))}
-			</div>
+					<div class="divider my-0" />
+				</>
+			))}
 			<div class="text-center mt-8">
 				<a href="/blog" class="btn btn-primary">
 					View All Posts
@@ -55,7 +59,7 @@ const sortedPosts = posts
 			</div>
 		</section>
 
-		<div class="divider my-16"></div>
+		<div class="divider my-12"></div>
 
 		<section>
 			<h2 class="text-3xl font-bold text-center mb-12">What I Do</h2>
