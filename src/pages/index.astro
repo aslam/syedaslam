@@ -1,5 +1,4 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Card from "../components/Card.astro";
 import { getCollection } from "astro:content";
@@ -16,8 +15,6 @@ const sortedPosts = posts
 	description={SITE_DESCRIPTION}
 	sideBarActiveItemID="home"
 >
-	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-
 	<main class="container mx-auto lg:px-6 px-6 py-12">
 		<div class="flex flex-col items-center justify-center text-center">
 			<h1 class="text-4xl lg:text-6xl font-bold">
@@ -100,8 +97,8 @@ const sortedPosts = posts
 			<h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
 			<div class="text-center">
 				<p class="text-xl text-base-content/80 mb-8">
-					I love connecting with fellow developers and technology enthusiasts. 
-					Whether you have questions about my work, want to collaborate on a project, 
+					I love connecting with fellow developers and technology enthusiasts.
+					Whether you have questions about my work, want to collaborate on a project,
 					or just want to say hello, I'd love to hear from you!
 				</p>
 				<div class="flex gap-4 justify-center flex-wrap">
