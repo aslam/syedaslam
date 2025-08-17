@@ -7,7 +7,7 @@ author: 'Syed Aslam'
 heroImage: 'https://res.cloudinary.com/syed-aslam/image/upload/w_1000/q_auto/f_auto/v1611817564/hitesh-choudhary-D9Zow2REm8U-unsplash_g5ymcr.jpg'
 layout: '@/layouts/BlogPost.astro'
 tags: ['python', 'virtualenv', 'venv', 'best-practices']
-# canonical: "https://syedaslam.com/blog/creating-python-virtual-environments/"
+canonical: 'https://syedaslam.com/blog/creating-python-virtual-environments/'
 ---
 
 > **Editor’s Note (Updated 2025):**
