@@ -111,3 +111,12 @@ For most apps, though, the **built-in** `venv` is the simplest and most portable
 ### Wrap-up
 
 Virtual environments solve the problem of conflicting dependencies by isolating projects. Whether you use `venv`, Poetry, or Conda, it’s a best practice to never develop Python projects in your system Python installation.
+
+### Quick Comparison
+
+| Tool       | Built-in? | Best For                               | Pros                                                | Cons                                     |
+| ---------- | --------- | -------------------------------------- | --------------------------------------------------- | ---------------------------------------- |
+| **venv**   | ✅ Yes    | General projects, simple setups        | Lightweight, no extra installs, universal           | No dependency resolution, just isolation |
+| **Poetry** | ❌ No     | Modern app development, packaging      | Lockfile, publishing support, dependency management | Extra tool to install, opinionated       |
+| **Pipenv** | ❌ No     | Legacy projects, Pipfile workflow      | Integrates pip + virtualenv, human-friendly config  | Popularity declined, slower than Poetry  |
+| **Conda**  | ❌ No     | Data science, ML, scientific computing | Handles Python + native libs (e.g., BLAS)           | Heavyweight, separate ecosystem          |
