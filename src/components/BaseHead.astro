@@ -2,15 +2,19 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
+import type { getImage } from 'astro:assets';
 
+type ImageMetadata = Awaited<ReturnType<typeof getImage>>;
 export interface Props {
 	title: string;
 	description: string;
-	image?: string;
+	image?: string | ImageMetadata;
 	ogType?: string;
 }
 
-const { title, description, image = '/social_img.webp', ogType = 'website' } = Astro.props;
+const { title, description, image: rawImage = '/social_img.webp', ogType = 'website' } = Astro.props;
+
+const image = typeof rawImage === 'string' ? rawImage : rawImage.src;
 ---
 
 <!-- Global Metadata -->
