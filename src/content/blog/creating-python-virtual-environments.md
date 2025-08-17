@@ -4,7 +4,7 @@ description: 'Learn how to create and use Python virtual environments with venv 
 pubDate: '2021-01-28T12:13:49+05:30'
 updatedDate: '2025-08-17T00:00:00+05:30'
 author: 'Syed Aslam'
-heroImage: 'https://res.cloudinary.com/syed-aslam/image/upload/w_1000/q_auto/f_auto/v1611817564/hitesh-choudhary-D9Zow2REm8U-unsplash_g5ymcr.jpg'
+heroImage: '../../assets/python-venv.png'
 layout: '@/layouts/BlogPost.astro'
 tags: ['python', 'virtualenv', 'venv', 'best-practices']
 canonical: 'https://syedaslam.com/blog/creating-python-virtual-environments/'

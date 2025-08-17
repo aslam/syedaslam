@@ -4,13 +4,11 @@ description: 'Learn how to safely extract external HTTP headers in Rails while f
 pubDate: '2021-06-12T20:33:07+05:30'
 updatedDate: '2025-08-17T00:00:00+05:30'
 author: 'Syed Aslam'
-heroImage: '../../assets/http-headers-rails.jpeg'
+heroImage: '../../assets/http-headers.png'
 layout: '@/layouts/BlogPost.astro'
 tags: ['rails', 'http', 'headers', 'tips']
 canonical: 'https://syedaslam.com/blog/http-headers-in-rails/'
 ---
-
-_Photo by [Kevin Laminto](https://unsplash.com/@kevinlaminto) on Unsplash._
 
 > **Editor’s Note (Updated 2025):**
 > This tip is still useful. `request.headers` in Rails continues to include both external HTTP headers and internal Rack/Rails environment keys.

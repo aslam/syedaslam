@@ -3,7 +3,7 @@ title: 'Git: Revert an Updated File'
 description: 'How to remove an updated file from a pull request without deleting the file itself — ensuring your changeset stays clean and focused.'
 pubDate: 2021-02-17
 tags: ['git', 'git-revert']
-heroImage: 'https://res.cloudinary.com/syed-aslam/image/upload/w_1000/q_auto/f_auto/v1613586919/jim-wilson-5QvsD0AaXPk-unsplash_fxcwvt.jpg'
+heroImage: '../../assets/git-revert.png'
 author: 'Syed Aslam'
 ---
 

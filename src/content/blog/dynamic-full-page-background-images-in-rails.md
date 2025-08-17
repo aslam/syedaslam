@@ -4,13 +4,11 @@ description: 'Learn how to set and randomize full-page background images in a Ra
 pubDate: '2020-07-07T17:49:26+05:30'
 updatedDate: '2025-08-17T00:00:00+05:30'
 author: 'Syed Aslam'
-heroImage: '../../assets/dynamic-backgrounds.jpeg'
+heroImage: '../../assets/dynamic-backgrounds.png'
 layout: '@/layouts/BlogPost.astro'
 tags: ['rails', 'css', 'helpers']
 # canonical: "https://syedaslam.com/blog/dynamic-background-images-rails/"
 ---
-
-_Photo credit: Photo by Puzzle Creative / Unsplash_
 
 > **Editor’s Note (Updated 2025):**
 > This post was originally written in 2020. The CSS approach using `background-size: cover` is still valid.

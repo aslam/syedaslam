@@ -4,7 +4,7 @@ description: 'Learn how to format ActiveSupport::Duration objects into concise, 
 pubDate: '2023-02-04T23:42:26+05:30'
 updatedDate: '2025-08-17T00:00:00+05:30'
 author: 'Syed Aslam'
-heroImage: '../../assets/duration-in-words.webp'
+heroImage: '../../assets/duration.png'
 tags: ['rails', 'activesupport', 'helpers']
 # canonical: "https://syedaslam.com/blog/formatting-activesupport-duration-objects/"
 ---

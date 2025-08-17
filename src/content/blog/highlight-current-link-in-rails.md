@@ -4,12 +4,10 @@ description: 'A look back at techniques for highlighting the active link in Rail
 pubDate: '2011-03-28T12:13:49+05:30'
 updatedDate: '2025-08-17T00:00:00+05:30'
 tags: ['rails', 'helpers', 'navigation']
-heroImage: 'https://res.cloudinary.com/syed-aslam/image/upload/v1557086597/hello-i-m-nik-281498-unsplash_uytwma.jpg'
+heroImage: '../../assets/current-link.png'
 author: 'Syed Aslam'
 canonical: 'https://syedaslam.netlify.app/highlighting-current-link-within-a-navigation-list-in-rails/'
 ---
-
-_Photo credit: Photo by [Hello I'm Nik](https://unsplash.com/photos/MAgPyHRO0AA) / Unsplash_
 
 > **Editor’s Note (2025):**
 > This post was originally written in 2011. At the time, handling active links in Rails navigation required custom helpers and JavaScript tricks. Modern Rails provides built-in helpers like `current_page?`, making this much easier. The original content is preserved below for historical context, followed by updated approaches.

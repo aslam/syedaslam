@@ -4,7 +4,7 @@ description: 'Learn a classic CSS trick to center a fixed-width or fixed-height 
 pubDate: '2011-03-22T16:42:17+05:30'
 updatedDate: '2025-08-17T00:00:00+05:30'
 author: 'Syed Aslam'
-heroImage: '../../assets/toa-heftiba-530171-unsplash_amx3vo.jpg'
+heroImage: '../../assets/centering-elements.png'
 layout: '@/layouts/BlogPost.astro'
 tags: ['css', 'layout']
 canonical: 'https://syedaslam.com/blog/centering-fixed-sized-elements/'

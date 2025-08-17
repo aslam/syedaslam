@@ -4,7 +4,7 @@ description: 'When an NPM package is missing a feature or has a blocking bug, po
 pubDate: '2020-12-08T12:50:00+05:30'
 updatedDate: '2025-08-17T00:00:00+05:30'
 author: 'Syed Aslam'
-heroImage: 'https://res.cloudinary.com/syed-aslam/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1607415314/jung-ho-park-DHASH1AYxkI-unsplash_woubu8.jpg'
+heroImage: '../../assets/forked-npm.png'
 layout: '@/layouts/BlogPost.astro'
 tags: ['node', 'npm', 'javascript', 'web-development']
 
