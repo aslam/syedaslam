@@ -1,21 +1,27 @@
-import { defineCollection, z } from 'astro:content';
+import {
+  defineCollection,
+  z,
+  type SchemaContext,
+} from 'astro:content';
 
-export const blogSchema = z.object({
-  title: z.string(),
-  description: z.string(),
-  pubDate: z.coerce.date(),
-  updatedDate: z.coerce.date().optional(),
-  heroImage: z.string().optional(),
-  badge: z.string().optional(),
-  tags: z
-    .array(z.string())
-    .refine((items) => new Set(items).size === items.length, {
-      message: 'tags must be unique',
-    })
-    .optional(),
-  author: z.string().optional(),
-  canonical: z.string().url().optional(),
-});
+export const blogSchema = ({ image }: SchemaContext) =>
+  z.object({
+    title: z.string(),
+    description: z.string(),
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+    heroImage: z.union([image(), z.string().url()]).optional(),
+    badge: z.string().optional(),
+    tags: z
+      .array(z.string())
+      .refine((items) => new Set(items).size === items.length, {
+        message: 'tags must be unique',
+      })
+      .optional(),
+    author: z.string().optional(),
+    canonical: z.string().url().optional(),
+    layout: z.string().optional(),
+  });
 
 const storeSchema = z.object({
   title: z.string(),
@@ -30,13 +36,10 @@ const storeSchema = z.object({
   heroImage: z.string().optional(),
 });
 
-export type BlogSchema = z.infer<typeof blogSchema>;
+export type BlogSchema = z.infer<ReturnType<typeof blogSchema>>;
 export type StoreSchema = z.infer<typeof storeSchema>;
 
-const blogCollection = defineCollection({
-  // Type-check frontmatter using a schema.
-  schema: blogSchema,
-});
+const blogCollection = defineCollection({ schema: blogSchema });
 const storeCollection = defineCollection({ schema: storeSchema });
 
 export const collections = {
