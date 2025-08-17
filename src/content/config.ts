@@ -13,6 +13,8 @@ export const blogSchema = z.object({
       message: 'tags must be unique',
     })
     .optional(),
+  author: z.string().optional(),
+  canonical: z.string().url().optional(),
 });
 
 const storeSchema = z.object({
@@ -31,7 +33,10 @@ const storeSchema = z.object({
 export type BlogSchema = z.infer<typeof blogSchema>;
 export type StoreSchema = z.infer<typeof storeSchema>;
 
-const blogCollection = defineCollection({ schema: blogSchema });
+const blogCollection = defineCollection({
+  // Type-check frontmatter using a schema.
+  schema: blogSchema,
+});
 const storeCollection = defineCollection({ schema: storeSchema });
 
 export const collections = {
