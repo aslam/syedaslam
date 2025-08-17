@@ -7,7 +7,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 const posts = await getCollection("blog");
 const sortedPosts = posts
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-	.slice(0, 3);
+	.slice(0, 5);
 ---
 
 <BaseLayout
@@ -56,69 +56,6 @@ const sortedPosts = posts
 				<a href="/blog" class="btn btn-primary">
 					View All Posts
 				</a>
-			</div>
-		</section>
-
-		<div class="divider my-12"></div>
-
-		<section>
-			<h2 class="text-3xl font-bold text-center mb-12">What I Do</h2>
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-				<div class="card bg-base-100 shadow-xl">
-					<div class="card-body text-center">
-						<div class="text-4xl mb-4">🖥️</div>
-						<h3 class="card-title justify-center">Development</h3>
-						<p>Full-stack development, web applications, APIs, and cloud solutions</p>
-					</div>
-				</div>
-				<div class="card bg-base-100 shadow-xl">
-					<div class="card-body text-center">
-						<div class="text-4xl mb-4">🚀</div>
-						<h3 class="card-title justify-center">Technology</h3>
-						<p>Modern web technologies, cloud platforms, and emerging tools</p>
-					</div>
-				</div>
-				<div class="card bg-base-100 shadow-xl">
-					<div class="card-body text-center">
-						<div class="text-4xl mb-4">📚</div>
-						<h3 class="card-title justify-center">Learning</h3>
-						<p>Continuous learning and staying updated with industry trends</p>
-					</div>
-				</div>
-				<div class="card bg-base-100 shadow-xl">
-					<div class="card-body text-center">
-						<div class="text-4xl mb-4">🤝</div>
-						<h3 class="card-title justify-center">Community</h3>
-						<p>Open source contributions and knowledge sharing</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<div class="divider my-16"></div>
-
-		<section>
-			<h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
-			<div class="text-center">
-				<p class="text-xl text-base-content/80 mb-8">
-					I love connecting with fellow developers and technology enthusiasts.
-					Whether you have questions about my work, want to collaborate on a project,
-					or just want to say hello, I'd love to hear from you!
-				</p>
-				<div class="flex gap-4 justify-center flex-wrap">
-					<a href="mailto:hello@syedaslam.com" class="btn btn-primary">
-						📧 Email Me
-					</a>
-					<a href="https://github.com/syedaslam" class="btn btn-outline" target="_blank" rel="noopener">
-						🐙 GitHub
-					</a>
-					<a href="https://twitter.com/syedaslam" class="btn btn-outline" target="_blank" rel="noopener">
-						🐦 Twitter
-					</a>
-					<a href="https://linkedin.com/in/syedaslam" class="btn btn-outline" target="_blank" rel="noopener">
-						💼 LinkedIn
-					</a>
-				</div>
 			</div>
 		</section>
 	</main>
