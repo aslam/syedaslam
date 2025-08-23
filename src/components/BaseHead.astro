@@ -10,9 +10,10 @@ export interface Props {
 	description: string;
 	image?: string | ImageMetadata;
 	ogType?: string;
+	keywords?: string;
 }
 
-const { title, description, image: rawImage = '/social_img.webp', ogType = 'website' } = Astro.props;
+const { title, description, image: rawImage = '/social_img.webp', ogType = 'website', keywords = 'software engineering, web development, javascript, ruby, python, ruby on rails, css, sql, postgresql, mysql, git, macos' } = Astro.props;
 
 const image = typeof rawImage === 'string' ? rawImage : rawImage.src;
 ---
@@ -27,6 +28,9 @@ const image = typeof rawImage === 'string' ? rawImage : rawImage.src;
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+<meta name="keywords" content={keywords} />
+<link rel="canonical" href={Astro.url} />
+<meta name="robots" content="index, follow" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content={ogType} />
