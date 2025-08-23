@@ -78,3 +78,9 @@ mysql -u root -p
 - **MariaDB**: Uses similar steps, but authentication plugins may vary.
 - **Security caution**: While MySQL is running with `--skip-grant-tables`, anyone with local access can connect without a password. Keep downtime short.
 - **Best practice**: Consider using a password manager to avoid lost credentials, and secure your database with proper firewall rules.
+
+---
+
+### You might also like
+
+- [Re-initializing Table Sequences in PostgreSQL](/blog/re-initializing-table-sequences-in-postgresql)

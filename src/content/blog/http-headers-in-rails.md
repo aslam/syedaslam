@@ -32,7 +32,7 @@ One way is to match headers by a prefix:
 
 ```ruby
 request.env.select { |k, v|
-  k.match("^HTTP.*|^CONTENT.*|^REMOTE.*|^REQUEST.*|^AUTHORIZATION.*|^SCRIPT.*|^SERVER.*")
+  k.match("^HTTP.*|^CONTENT.*|^REMOTE.*|^REQUEST.*|^AUTHORIZATION.*|^SCRIPT.*|^SERVER.*").
 }
 ```
 
@@ -71,3 +71,10 @@ headers = request.headers.env.slice(*ALLOWED_HEADERS)
 - Rails mixes external headers and env keys in `request.headers`.
 - Filtering out keys containing `.` is a neat, practical solution.
 - For more robust setups, consider **explicit whitelists** or **middleware-based filtering**.
+
+---
+
+### You might also like
+
+- [Adding a Close Button to Flash Messages in Rails](/blog/adding-a-close-button-to-flash-messages-in-rails)
+- [Connecting to Multiple Databases in a Rails App](/blog/connecting-to-multiple-databases-in-a-rails-app)

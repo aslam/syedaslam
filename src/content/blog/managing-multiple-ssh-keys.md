@@ -174,3 +174,9 @@ git config core.sshCommand "ssh -i ~/.ssh/id_rsa -F /dev/null"
 - For Git identity, prefer gitconfig conditionals or per-repo overrides.
 
 This setup scales cleanly across personal, work, and client projects.
+
+---
+
+### You might also like
+
+- [Git: Revert an Updated File](/blog/git-revert-an-updated-file)

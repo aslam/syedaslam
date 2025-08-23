@@ -97,3 +97,10 @@ duration_in_words(duration, format: :full, locale: :de)
 ### Wrap-up
 
 When you need to report durations in a user-friendly way, `duration_in_words` provides a clean, configurable, and locale-aware solution. It’s a big improvement over the default `#inspect` output and saves you from reinventing formatting helpers.
+
+---
+
+### You might also like
+
+- [Adding a Close Button to Flash Messages in Rails](/blog/adding-a-close-button-to-flash-messages-in-rails)
+- [Working with HTTP Headers in Rails](/blog/working-with-http-headers-in-rails)

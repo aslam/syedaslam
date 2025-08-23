@@ -105,3 +105,10 @@ For one-off migrations, Rails’ built-in tools or ETL libraries (like [ActiveRe
 - Back in 2011, `establish_connection` was the simplest way to connect to multiple databases.
 - Today, prefer Rails’ **built-in multi-database support** for maintainability and clarity.
 - If you only need to pull in one table temporarily, the legacy approach still works - but Rails 6+ makes this a solved problem.
+
+---
+
+### You might also like
+
+- [Loading CSV Data in Rails](/blog/loading-csv-data-in-rails-then-vs-now)
+- [Retrieve a Random Row with Active Record](/blog/retrieving-a-random-row-in-activerecord)

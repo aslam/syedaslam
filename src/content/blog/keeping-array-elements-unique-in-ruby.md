@@ -77,3 +77,10 @@ set << 1
 ```
 
 This approach avoids repeated checks and provides a cleaner, intention-revealing API.
+
+---
+
+### You might also like
+
+- [Working with Files in Ruby](/blog/working-with-files-in-ruby)
+- [Magic Comments in Ruby](/blog/magic-comments-in-ruby)

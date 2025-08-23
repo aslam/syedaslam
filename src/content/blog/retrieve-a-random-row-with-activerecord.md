@@ -83,3 +83,10 @@ Model.order("RANDOM()").first
 - For most Rails apps, **offset +** `.first` or `ORDER BY RANDOM()` is good enough.
 - For large datasets, prefer `TABLESAMPLE` in Postgres or rethink your randomness strategy.
 - Avoid `RAND()` in MySQL on large datasets without `LIMIT`, as it’s extremely costly.
+
+---
+
+### You might also like
+
+- [Re-initializing Table Sequences in PostgreSQL](/blog/re-initializing-table-sequences-in-postgresql)
+- [Connecting to Multiple Databases in a Rails App](/blog/connecting-to-multiple-databases-in-a-rails-app)

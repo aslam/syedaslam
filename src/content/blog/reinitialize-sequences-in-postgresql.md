@@ -90,3 +90,10 @@ This ensures the next insert picks up the right value without deleting or moving
 - Legacy method: Copy out, delete, reset, and copy back in.
 - Modern method: Use `ALTER SEQUENCE ... RESTART` or `setval` to fix alignment in place.
 - Best practice: Always reset sequences after bulk imports or manual ID adjustments.
+
+---
+
+### You might also like
+
+- [Recovering a MySQL Root Password](/blog/recovering-a-mysql-root-password)
+- [Retrieve a Random Row with Active Record](/blog/retrieving-a-random-row-in-activerecord)

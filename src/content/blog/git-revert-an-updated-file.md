@@ -80,3 +80,9 @@ That said, you’ll still see git checkout in tutorials, StackOverflow answers, 
 ### Resources
 
 - [Atlassian Git Tutorials](https://www.atlassian.com/git) — beginner to advanced Git workflows, commands, and code review tips.
+
+---
+
+### You might also like
+
+- [Managing Multiple SSH Keys in Git and SSH Config](/blog/managing-multiple-ssh-keys-in-git-and-ssh-config)

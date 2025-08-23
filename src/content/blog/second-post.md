@@ -38,11 +38,11 @@ Modern browsers support resource hints and priorities that can significantly imp
 
 ```html
 <!-- Preload critical resources -->
-<link rel="preload" href="/critical.css" as="style">
-<link rel="preload" href="/hero-image.jpg" as="image">
+<link rel="preload" href="/critical.css" as="style" />
+<link rel="preload" href="/hero-image.jpg" as="image" />
 
 <!-- Prefetch non-critical resources -->
-<link rel="prefetch" href="/blog-posts.json">
+<link rel="prefetch" href="/blog-posts.json" />
 ```
 
 ## Emerging Performance Strategies
@@ -64,14 +64,14 @@ The future of performance lies in bringing computation closer to users:
 export async function onRequest({ request, env }) {
   const url = new URL(request.url);
   const response = await env.ASSETS.fetch(request);
-  
+
   // Modify response at the edge
   const html = await response.text();
   const modifiedHtml = html.replace(
     /<title>.*<\/title>/,
     `<title>${url.pathname} - My Blog</title>`
   );
-  
+
   return new Response(modifiedHtml, response);
 }
 ```
@@ -97,7 +97,7 @@ class PerformanceMonitor {
     this.metrics = {};
     this.observe();
   }
-  
+
   observe() {
     // Observe various performance metrics
     new PerformanceObserver((list) => {
@@ -106,7 +106,7 @@ class PerformanceMonitor {
       }
     }).observe({ entryTypes: ['navigation', 'resource', 'paint'] });
   }
-  
+
   recordMetric(entry) {
     // Send to analytics service
     this.sendToAnalytics(entry);
@@ -149,3 +149,10 @@ The future of web performance is about:
 While Core Web Vitals provide a solid foundation, the future of web performance requires looking beyond these metrics. By embracing emerging strategies, tools, and monitoring approaches, we can create web experiences that are not just fast, but truly delightful for users.
 
 The key is to stay informed about new developments and be willing to experiment with cutting-edge performance optimization techniques.
+
+---
+
+### You might also like
+
+- [Migrating from Gridsome to Astro: A Developer Journey](/blog/migrating-from-gridsome-to-astro-a-developer-journey)
+- [Continuous Learning in Tech: Staying Relevant in a Fast-Paced Industry](/blog/continuous-learning-in-tech-staying-relevant-in-a-fast-paced-industry)

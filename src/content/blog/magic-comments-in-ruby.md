@@ -108,3 +108,10 @@ Running Ruby with `-w` (warnings) can also surface indentation issues; setting t
 
 - Place magic comments at the very top (after an optional shebang).
 - Use `encoding` for non-UTF-8 files (rare today), `frozen_string_literal` for performance & safety, `shareable_constant_value` when working with Ractors/immutability, and `warn_indent` to catch formatting issues quickly.
+
+---
+
+### You might also like
+
+- [Module Functions in Ruby](/blog/module-functions-in-ruby-module_function-vs-extend-self)
+- [Working with Files in Ruby](/blog/working-with-files-in-ruby)

@@ -66,3 +66,10 @@ The most noticeable improvement was in performance metrics:
 The migration from Gridsome to Astro was a positive experience that resulted in better performance and developer experience. While Gridsome is still a solid choice for Vue.js developers, Astro offers compelling benefits for those looking to optimize performance and explore modern static site generation techniques.
 
 The process reinforced my belief that choosing the right tool for the job is crucial, and sometimes that means being willing to migrate and learn new technologies.
+
+---
+
+### You might also like
+
+- [The Future of Web Performance: Beyond Core Web Vitals](/blog/the-future-of-web-performance-beyond-core-web-vitals)
+- [Continuous Learning in Tech: Staying Relevant in a Fast-Paced Industry](/blog/continuous-learning-in-tech-staying-relevant-in-a-fast-paced-industry)

@@ -69,3 +69,9 @@ These methods don’t require knowing the element’s width or height in advance
 - The negative margin trick was a useful hack in the days before Flexbox and Grid.
 - For modern layouts, prefer Flexbox or Grid (cleaner, responsive, easier to maintain).
 - The transform method is a middle ground when using absolute positioning with unknown dimensions.
+
+---
+
+### You might also like
+
+- [Dynamic Full Page Background Images in Rails](/blog/dynamic-full-page-background-images-in-rails)

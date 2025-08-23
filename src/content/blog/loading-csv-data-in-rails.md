@@ -86,3 +86,10 @@ Why this is better:
 - If you’re on a legacy Rails app, the old approach might look familiar.
 - On modern Rails, always use `CSV` + bulk inserts.
 - Even better, for very large datasets, consider background jobs (Sidekiq/Resque) to process imports asynchronously.
+
+---
+
+### You might also like
+
+- [Connecting to Multiple Databases in a Rails App](/blog/connecting-to-multiple-databases-in-a-rails-app)
+- [Working with Files in Ruby](/blog/working-with-files-in-ruby)

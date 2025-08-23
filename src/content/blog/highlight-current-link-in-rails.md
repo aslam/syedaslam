@@ -104,3 +104,10 @@ export default class extends Controller {
   }
 }
 ```
+
+---
+
+### You might also like
+
+- [Dynamic Full Page Background Images in Rails](/blog/dynamic-full-page-background-images-in-rails)
+- [Adding a Close Button to Flash Messages in Rails](/blog/adding-a-close-button-to-flash-messages-in-rails)

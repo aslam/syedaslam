@@ -131,3 +131,10 @@ Here, no method copies are made — the same method is available both on the mod
 - Use module_function if you want to define module-level utility functions that shouldn’t become part of a class’s public API.
 - Use extend self if you want the same methods to be available both at the module level and when mixed into classes.
 - Both patterns are widely used; which one you choose depends on API design intent.
+
+---
+
+### You might also like
+
+- [Magic Comments in Ruby](/blog/magic-comments-in-ruby)
+- [Keeping Array Elements Unique in Ruby](/blog/keeping-array-elements-unique-in-ruby)

@@ -87,7 +87,23 @@ iTerm > Preferences > Profiles > Login Shell
   sizes="(max-width: 768px) 90vw, 800px"
   width="800"
   height="450"
-  alt="Example of a Rails flash notice rendered in the view"
+  alt="iTerm preferences window showing how to set the login shell"
   loading="lazy"
   decoding="async"
 />
+
+---
+
+### Wrap-up
+
+- After a macOS upgrade, always run `brew doctor`.
+- Ensure your terminal app is configured to use the correct default shell (`/bin/zsh`).
+- Reinstalling oh-my-zsh or other shell frameworks can resolve path issues.
+
+These steps should help you get back to a working command-line environment quickly.
+
+---
+
+### You might also like
+
+- [Managing Multiple SSH Keys in Git and SSH Config](/blog/managing-multiple-ssh-keys-in-git-and-ssh-config)

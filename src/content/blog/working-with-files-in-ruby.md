@@ -123,3 +123,10 @@ File.executable?("script.sh") # true/false
 - Explore `FileUtils`, `Pathname`, and `StringIO` for advanced tasks.
 
 Docs: [File (Ruby 3.x)](https://ruby-doc.org/core/File.html), [File::Stat](https://ruby-doc.org/core/File/Stat.html), [FileTest](https://ruby-doc.org/core/FileTest.html)
+
+---
+
+### You might also like
+
+- [Loading CSV Data in Rails](/blog/loading-csv-data-in-rails-then-vs-now)
+- [Magic Comments in Ruby](/blog/magic-comments-in-ruby)

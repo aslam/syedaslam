@@ -153,3 +153,10 @@ end
 | **TailwindCSS Utilities**    | Apps already using Tailwind       | One-liner backgrounds, responsive utilities | Static unless paired with JS/variables     |
 | **CSS Variables**            | Modern CSS-driven design systems  | Easy theming, works with any framework      | Requires careful setup and browser support |
 | **React/Vue/JS Binding**     | SPA or component-driven UIs       | Full dynamic control at runtime             | Overkill for simple Rails views            |
+
+---
+
+### You might also like
+
+- [Centering a Fixed-Sized Element with CSS](/blog/centering-a-fixed-sized-element-with-css)
+- [Highlighting Current Link in Rails Navigation](/blog/highlighting-current-link-in-rails-navigation)

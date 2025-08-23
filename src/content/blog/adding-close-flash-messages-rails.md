@@ -6,6 +6,7 @@ updatedDate: '2025-08-16'
 author: 'Syed Aslam'
 heroImage: '../../assets/rails-flash-close.png'
 tags: ['rails', 'flash', 'ui']
+keywords: 'rails, flash messages, stimulus, javascript, css'
 canonical: 'https://syedaslam.com/blog/adding-close-flash-messages-rails/'
 ---
 
@@ -178,3 +179,10 @@ export default class extends Controller {
 #### Wrap-up
 
 Keep the original snippet as a historical reference, but favor the **Stimulus** approach for modern Rails apps. It’s cleaner, accessible, and future-proof.
+
+---
+
+### You might also like
+
+- [Working with HTTP Headers in Rails](/blog/working-with-http-headers-in-rails)
+- [Highlighting Current Link in Rails Navigation](/blog/highlighting-current-link-in-rails-navigation)
