@@ -37,5 +37,16 @@ const {
       </div>
       {includeSidebar && <SideBar sideBarActiveItemID={sideBarActiveItemID} />}
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('a[href^="http"]').forEach(a => {
+          const anchor = a as HTMLAnchorElement;
+          if (anchor.host !== location.host) {
+            anchor.setAttribute('target', '_blank');
+            anchor.setAttribute('rel', 'noopener noreferrer');
+          }
+        });
+      });
+    </script>
   </body>
 </html>
