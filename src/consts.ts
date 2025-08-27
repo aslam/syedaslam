@@ -7,4 +7,4 @@ export const SITE_DESCRIPTION =
 export const SITE_AUTHOR = 'Syed Aslam';
 export const SITE_URL = 'https://syedaslam.com'; // Update this with your actual domain
 export const SITE_TWITTER = '@syedaslam'; // Update with your Twitter handle if you have one
-export const SITE_GITHUB = 'syedaslam'; // Update with your GitHub username if you have one
+export const SITE_GITHUB = 'aslam'; // Update with your GitHub username if you have one

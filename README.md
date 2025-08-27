@@ -17,23 +17,26 @@ A modern, fast, and beautiful personal blog built with [Astro](https://astro.bui
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <your-repo-url>
 cd syedaslam
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -113,12 +116,12 @@ The blog uses CSS custom properties for easy theming. Update `src/styles/global.
 
 ```css
 :root {
-  --accent: #667eea;           /* Primary accent color */
-  --accent-dark: #5a67d8;      /* Darker accent for hover states */
-  --black: 15, 18, 25;         /* Text color */
-  --gray: 96, 115, 159;        /* Secondary text */
+  --accent: #667eea; /* Primary accent color */
+  --accent-dark: #5a67d8; /* Darker accent for hover states */
+  --black: 15, 18, 25; /* Text color */
+  --gray: 96, 115, 159; /* Secondary text */
   --gray-light: 229, 233, 240; /* Light backgrounds */
-  --gray-dark: 34, 41, 57;     /* Dark text */
+  --gray-dark: 34, 41, 57; /* Dark text */
 }
 ```
 
@@ -154,6 +157,7 @@ npm run build
 ### Deploy to GitHub Pages
 
 1. Update `astro.config.mjs`:
+
 ```javascript
 export default defineConfig({
   site: 'https://yourusername.github.io',
@@ -228,7 +232,7 @@ This project is open source and available under the [MIT License](LICENSE).
 - **Website**: [syedaslam.com](https://syedaslam.com)
 - **Email**: hello@syedaslam.com
 - **Twitter**: [@syedaslam](https://twitter.com/syedaslam)
-- **GitHub**: [syedaslam](https://github.com/syedaslam)
+- **GitHub**: [syedaslam](https://github.com/aslam)
 
 ---
 

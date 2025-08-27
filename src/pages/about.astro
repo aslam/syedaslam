@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
 import { SITE_TITLE } from "../config";
 ---
 
@@ -20,19 +21,16 @@ import { SITE_TITLE } from "../config";
 			<div>
 				<h2 class="text-3xl font-bold mb-6">Who I Am</h2>
 				<p class="text-lg text-base-content/80 mb-4">
-					I'm a passionate developer and technology enthusiast who loves creating meaningful software 
-					and sharing knowledge with the community. My journey in technology started with curiosity 
-					and has evolved into a deep passion for building solutions that make a difference.
+					I'm Syed Aslam, a passionate software engineer with over a decade of experience crafting robust and scalable web applications. My journey began with a fascination for how technology solves real-world problems, evolving into a dedication to building elegant and efficient solutions.
 				</p>
 				<p class="text-lg text-base-content/80">
-					When I'm not coding, you'll find me exploring new technologies, contributing to open source 
-					projects, reading about the latest industry trends, or sharing insights through this blog.
+					I thrive on continuous learning and embracing new challenges. My expertise spans full-stack development, with a strong focus on Ruby on Rails, JavaScript (React, Node.js), and Python. I'm also deeply interested in cloud architecture, database optimization, and fostering best practices in software development.
 				</p>
 			</div>
 			<div class="text-center">
-				<div class="avatar placeholder">
-					<div class="bg-neutral text-neutral-content rounded-full w-32">
-						<span class="text-3xl">SA</span>
+				<div class="avatar transition ease-in-out hover:scale-[102%] block m-auto">
+					<div class="w-32">
+						<Image class="mask mask-circle" format="webp" width={128} height={128} src="/profile.png" alt="Profile image" />
 					</div>
 				</div>
 			</div>
@@ -45,30 +43,30 @@ import { SITE_TITLE } from "../config";
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 				<div class="card bg-base-100 shadow-xl">
 					<div class="card-body text-center">
-						<div class="text-4xl mb-4">🖥️</div>
-						<h3 class="card-title justify-center">Development</h3>
-						<p>Full-stack development, web applications, APIs, and cloud solutions</p>
+						<div class="text-4xl mb-4">💻</div>
+						<h3 class="card-title justify-center">Software Development</h3>
+						<p>Building high-quality, scalable web applications and APIs using modern frameworks and agile methodologies.</p>
 					</div>
 				</div>
 				<div class="card bg-base-100 shadow-xl">
 					<div class="card-body text-center">
-						<div class="text-4xl mb-4">🚀</div>
-						<h3 class="card-title justify-center">Technology</h3>
-						<p>Modern web technologies, cloud platforms, and emerging tools</p>
+						<div class="text-4xl mb-4">☁️</div>
+						<h3 class="card-title justify-center">Cloud & DevOps</h3>
+						<p>Designing and implementing cloud-native solutions, CI/CD pipelines, and infrastructure as code for seamless deployments.</p>
 					</div>
 				</div>
 				<div class="card bg-base-100 shadow-xl">
 					<div class="card-body text-center">
-						<div class="text-4xl mb-4">📚</div>
-						<h3 class="card-title justify-center">Learning</h3>
-						<p>Continuous learning and staying updated with industry trends</p>
+						<div class="text-4xl mb-4">💡</div>
+						<h3 class="card-title justify-center">Technical Leadership</h3>
+						<p>Mentoring teams, driving technical strategy, and ensuring architectural excellence in complex projects.</p>
 					</div>
 				</div>
 				<div class="card bg-base-100 shadow-xl">
 					<div class="card-body text-center">
-						<div class="text-4xl mb-4">🤝</div>
-						<h3 class="card-title justify-center">Community</h3>
-						<p>Open source contributions and knowledge sharing</p>
+						<div class="text-4xl mb-4">✍️</div>
+						<h3 class="card-title justify-center">Content Creation</h3>
+						<p>Sharing insights, tutorials, and best practices on my blog to contribute to the developer community.</p>
 					</div>
 				</div>
 			</div>
@@ -76,19 +74,31 @@ import { SITE_TITLE } from "../config";
 
 		<div class="divider my-16"></div>
 
+		<section class="mb-16">
+			<h2 class="text-3xl font-bold text-center mb-12">My Blog: A Digital Garden of Knowledge</h2>
+			<div class="max-w-4xl mx-auto">
+				<p class="text-lg text-base-content/80 mb-6">
+					This blog is my personal space to explore and share my passion for software engineering. Here, you'll find articles ranging from deep technical dives into Ruby on Rails, JavaScript, and Python, to discussions on software architecture, career growth, and the latest industry trends.
+				</p>
+				<p class="text-lg text-base-content/80">
+					My goal is to provide valuable insights and practical tips that can help fellow developers navigate their own journeys. Whether you're a seasoned pro or just starting out, I hope you find something here that sparks your curiosity or helps you solve a challenge.
+				</p>
+			</div>
+		</section>
+
+		<div class="divider my-16"></div>
+
 		<section>
-			<h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+			<h2 class="text-3xl font-bold text-center mb-12">Let's Connect!</h2>
 			<div class="text-center">
 				<p class="text-xl text-base-content/80 mb-8">
-					I love connecting with fellow developers and technology enthusiasts. Whether you have 
-					questions about my work, want to collaborate on a project, or just want to say hello, 
-					I'd love to hear from you!
+					I'm always eager to connect with fellow engineers, tech enthusiasts, and anyone passionate about building great software. Feel free to reach out if you have questions, want to collaborate, or just want to chat about technology!
 				</p>
 				<div class="flex gap-4 justify-center flex-wrap">
-					<a href="mailto:hello@syedaslam.com" class="btn btn-primary">
+					<a href="mailto:aslam.maqsood@gmail.com" class="btn btn-primary">
 						📧 Email Me
 					</a>
-					<a href="https://github.com/syedaslam" class="btn btn-outline" target="_blank" rel="noopener">
+					<a href="https://github.com/aslam" class="btn btn-outline" target="_blank" rel="noopener">
 						🐙 GitHub
 					</a>
 					<a href="https://twitter.com/syedaslam" class="btn btn-outline" target="_blank" rel="noopener">
