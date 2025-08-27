@@ -1,15 +1,15 @@
 ---
-title: "Dynamic Full Page Background Images in Rails"
-description: "Learn how to set and randomize full-page background images in a Rails app using CSS3 and simple view helpers."
-pubDate: "2020-07-07"
-updatedDate: "2025-08-17"
-author: "Syed Aslam"
-heroImage: "../../assets/dynamic-backgrounds.png"
-tags: ["rails", "css", "helpers"]
-canonicalURL: "https://syedaslam.com/blog/dynamic-background-images-rails/"
+title: 'Dynamic Full Page Background Images in Rails'
+description: 'Learn how to set and randomize full-page background images in a Rails app using CSS3 and simple view helpers.'
+pubDate: '2020-07-07'
+updatedDate: '2025-08-17'
+author: 'Syed Aslam'
+heroImage: '../../assets/dynamic-backgrounds.png'
+tags: ['rails', 'css', 'helpers']
+canonicalURL: 'https://syedaslam.com/blog/dynamic-full-page-background-images-in-rails/'
 ---
 
-> **Editor’s Note (Updated 2025):**
+> **Note (Updated 2025):**
 > This post was originally written in 2020. The CSS approach using `background-size: cover` is still valid.
 > For modern projects, you can also use **CSS variables**, **utility frameworks (TailwindCSS)**, or **inline style bindings** (via Stimulus/React/Vue) to dynamically manage backgrounds more flexibly.
 

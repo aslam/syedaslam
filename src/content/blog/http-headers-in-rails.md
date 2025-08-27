@@ -1,15 +1,15 @@
 ---
-title: "Working with HTTP Headers in Rails"
-description: "Learn how to safely extract external HTTP headers in Rails while filtering out internal Rack and Rails environment variables."
-pubDate: "2021-06-12"
-updatedDate: "2025-08-17"
-author: "Syed Aslam"
-heroImage: "../../assets/http-headers.png"
-tags: ["rails", "http", "headers", "tips"]
-canonicalURL: "https://syedaslam.com/blog/http-headers-in-rails/"
+title: 'Working with HTTP Headers in Rails'
+description: 'Learn how to safely extract external HTTP headers in Rails while filtering out internal Rack and Rails environment variables.'
+pubDate: '2021-06-12'
+updatedDate: '2025-08-17'
+author: 'Syed Aslam'
+heroImage: '../../assets/http-headers.png'
+tags: ['rails', 'http', 'headers', 'tips']
+canonicalURL: 'https://syedaslam.com/blog/working-with-http-headers-in-rails/'
 ---
 
-> **Editor’s Note (Updated 2025):**
+> **Note (Updated 2025):**
 > This tip is still useful. `request.headers` in Rails continues to include both external HTTP headers and internal Rack/Rails environment keys.
 > For production apps, you can also consider middleware (e.g., Rack::Request) or gems like [rack-cors](https://github.com/cyu/rack-cors) if your use case involves CORS or security filtering.
 

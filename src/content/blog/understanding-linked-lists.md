@@ -1,12 +1,12 @@
 ---
-title: "Understanding Linked Lists (DSA Series)"
-description: "A practical introduction to singly and doubly linked lists—what they are, when to use them, core operations, time/space trade-offs, and modern relevance."
-pubDate: "2019-12-19"
-updatedDate: "2025-08-20"
-tags: ["dsa", "data-structures", "algorithms"]
-author: "Syed Aslam"
-heroImage: "../../assets/linked-lists.png"
-canonicalURL: "https://syedaslam.com/blog/understanding-linked-lists"
+title: 'Understanding Linked Lists (DSA Series)'
+description: 'A practical introduction to singly and doubly linked lists—what they are, when to use them, core operations, time/space trade-offs, and modern relevance.'
+pubDate: '2019-12-19'
+updatedDate: '2025-08-20'
+tags: ['dsa', 'data-structures', 'algorithms']
+author: 'Syed Aslam'
+heroImage: '../../assets/linked-lists.png'
+canonicalURL: 'https://syedaslam.com/blog/understanding-linked-lists-dsa-series'
 ---
 
 > **Note (2025)**

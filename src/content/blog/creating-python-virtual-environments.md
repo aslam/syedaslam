@@ -1,15 +1,15 @@
 ---
-title: "Creating Python Virtual Environments"
-description: "Learn how to create and use Python virtual environments with venv to isolate dependencies and manage multiple projects cleanly."
-pubDate: "2021-01-28"
-updatedDate: "2025-08-17"
-author: "Syed Aslam"
-heroImage: "../../assets/python-venv.png"
-tags: ["python", "virtualenv", "venv", "best-practices"]
-canonicalURL: "https://syedaslam.com/blog/creating-python-virtual-environments/"
+title: 'Creating Python Virtual Environments'
+description: 'Learn how to create and use Python virtual environments with venv to isolate dependencies and manage multiple projects cleanly.'
+pubDate: '2021-01-28'
+updatedDate: '2025-08-17'
+author: 'Syed Aslam'
+heroImage: '../../assets/python-venv.png'
+tags: ['python', 'virtualenv', 'venv', 'best-practices']
+canonicalURL: 'https://syedaslam.com/blog/creating-python-virtual-environments/'
 ---
 
-> **Editor’s Note (Updated 2025):**
+> **Note (Updated 2025):**
 > This post was originally written in 2021. The method described here using `venv` is still **the standard way** to create virtual environments in Python today.
 > Alternatives such as **Poetry**, **Pipenv**, and **Conda** may also be used depending on your workflow, but `venv` remains the simplest, built-in option.
 

@@ -1,12 +1,12 @@
 ---
-title: "Recovering a MySQL Root Password"
-description: "Forgetting a database password isn’t the end of the world. Here’s how to reset or recover the MySQL root password, with notes for modern MySQL versions."
-pubDate: "2011-03-31"
-updatedDate: "2025-08-20"
-tags: ["mysql", "database", "security"]
-author: "Syed Aslam"
-heroImage: "../../assets/mysql-root-password.png"
-canonicalURL: "https://syedaslam.com/blog/recover-root-password-mysql"
+title: 'Recovering a MySQL Root Password'
+description: 'Forgetting a database password isn’t the end of the world. Here’s how to reset or recover the MySQL root password, with notes for modern MySQL versions.'
+pubDate: '2011-03-31'
+updatedDate: '2025-08-20'
+tags: ['mysql', 'database', 'security']
+author: 'Syed Aslam'
+heroImage: '../../assets/mysql-root-password.png'
+canonicalURL: 'https://syedaslam.com/blog/recovering-a-mysql-root-password'
 ---
 
 > **Note (2025):**

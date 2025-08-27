@@ -1,12 +1,12 @@
 ---
-title: "Adding a Close Button to Flash Messages in Rails"
-description: "Learn how to add a simple close button to dismiss Rails flash messages and a modern Rails 7+ Stimulus approach."
-pubDate: "2011-02-19"
-updatedDate: "2025-08-16"
-author: "Syed Aslam"
-heroImage: "../../assets/rails-flash-close.png"
-tags: ["rails", "flash", "ui", "stimulus", "javascript", "css"]
-canonicalURL: "https://syedaslam.com/blog/adding-close-flash-messages-rails/"
+title: 'Adding a Close Button to Flash Messages in Rails'
+description: 'Learn how to add a simple close button to dismiss Rails flash messages and a modern Rails 7+ Stimulus approach.'
+pubDate: '2011-02-19'
+updatedDate: '2025-08-16'
+author: 'Syed Aslam'
+heroImage: '../../assets/rails-flash-close.png'
+tags: ['rails', 'flash', 'ui', 'stimulus', 'javascript', 'css']
+canonicalURL: 'https://syedaslam.com/blog/adding-a-close-button-to-flash-messages-in-rails/'
 ---
 
 > **Note (Updated 2025):**

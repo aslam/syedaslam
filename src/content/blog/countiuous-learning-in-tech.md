@@ -1,10 +1,11 @@
 ---
-title: "Continuous Learning in Tech: Staying Relevant in a Fast-Paced Industry"
-description: "Strategies and resources for developers to stay current with rapidly evolving technologies and maintain career growth in the tech industry."
-pubDate: "2024-01-05"
-author: "Syed Aslam"
-heroImage: "../../assets/continuous-learning-in-tech.jpg"
-tags: ["learning", "career", "tech"]
+title: 'Continuous Learning in Tech: Staying Relevant in a Fast-Paced Industry'
+description: 'Strategies and resources for developers to stay current with rapidly evolving technologies and maintain career growth in the tech industry.'
+pubDate: '2024-01-05'
+author: 'Syed Aslam'
+heroImage: '../../assets/continuous-learning-in-tech.jpg'
+tags: ['learning', 'career', 'tech']
+canonicalURL: 'https://syedaslam.com/blog/blog/continuous-learning-in-tech-staying-relevant-in-a-fast-paced-industry'
 ---
 
 # Continuous Learning in Tech: Staying Relevant in a Fast-Paced Industry

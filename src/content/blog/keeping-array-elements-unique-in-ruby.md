@@ -1,11 +1,12 @@
 ---
-title: "Keeping Array Elements Unique in Ruby"
-description: "Explore different ways to keep arrays unique in Ruby—using `uniq`, `uniq!`, and the `|` operator."
-pubDate: "2020-07-09"
-updatedDate: "2025-08-17"
-heroImage: "../../assets/ruby-array-unique.png"
-tags: ["ruby", "array", "tip"]
-author: "Syed Aslam"
+title: 'Keeping Array Elements Unique in Ruby'
+description: 'Explore different ways to keep arrays unique in Ruby—using `uniq`, `uniq!`, and the `|` operator.'
+pubDate: '2020-07-09'
+updatedDate: '2025-08-17'
+heroImage: '../../assets/ruby-array-unique.png'
+tags: ['ruby', 'array', 'tip']
+author: 'Syed Aslam'
+canonicalURL: 'https://syedaslam.com/blog/keeping-array-elements-unique-in-ruby/'
 ---
 
 With the `uniq` method, you can remove duplicate elements from an array:

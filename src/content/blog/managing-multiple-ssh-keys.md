@@ -1,12 +1,12 @@
 ---
-title: "Managing Multiple SSH Keys in Git and SSH Config"
-description: "Learn how to manage multiple SSH keys for personal, work, and client projects using ssh-agent, ssh config, and gitconfig conditionals."
-pubDate: "2021-02-15"
-updatedDate: "2025-08-20"
-tags: ["ssh", "ssh-config", "gitconfig"]
-author: "Syed Aslam"
-heroImage: "../../assets/multiple-ssh-keys.png"
-canonicalURL: "https://syedaslam.com/blog/manage-multiple-ssh-keys"
+title: 'Managing Multiple SSH Keys in Git and SSH Config'
+description: 'Learn how to manage multiple SSH keys for personal, work, and client projects using ssh-agent, ssh config, and gitconfig conditionals.'
+pubDate: '2021-02-15'
+updatedDate: '2025-08-20'
+tags: ['ssh', 'ssh-config', 'gitconfig']
+author: 'Syed Aslam'
+heroImage: '../../assets/multiple-ssh-keys.png'
+canonicalURL: 'https://syedaslam.com/blog/managing-multiple-ssh-keys-in-git-and-ssh-config/'
 ---
 
 > **Note (2025):**

@@ -1,14 +1,15 @@
 ---
-title: "Loading CSV Data in Rails: Then vs Now"
-description: "A look back at how Rails 2.x apps loaded CSV data into models, and how modern Rails apps can do it more efficiently today."
-pubDate: "2011-02-21"
-updatedDate: "2025-08-17"
-tags: ["rails", "ruby", "csv", "data-import", "hash"]
-heroImage: "../../assets/csv-import-rails.png"
-author: "Syed Aslam"
+title: 'Loading CSV Data in Rails: Then vs Now'
+description: 'A look back at how Rails 2.x apps loaded CSV data into models, and how modern Rails apps can do it more efficiently today.'
+pubDate: '2011-02-21'
+updatedDate: '2025-08-17'
+tags: ['rails', 'ruby', 'csv', 'data-import', 'hash']
+heroImage: '../../assets/csv-import-rails.png'
+author: 'Syed Aslam'
+canonicalURL: 'https://syedaslam.com/blog/loading-csv-data-in-rails-then-vs-nows/'
 ---
 
-> **Editor’s Note (2025)**
+> **Note (2025)**
 > This post was originally written in the Rails 2.3.8 era. While the overall idea of loading CSV data into Rails models remains relevant, the code shown is outdated. FasterCSV has been merged into Ruby’s built-in `CSV` class, and Rails now provides bulk insert methods (`insert_all`, `upsert_all`) that make the process far more efficient.
 > What follows is both the **legacy approach** and the **modern Rails way**.
 

@@ -1,12 +1,12 @@
 ---
-title: "Fixing Homebrew & Zsh Issues After macOS Upgrades"
-description: "Upgrading macOS often breaks command-line setups. Here’s how I fixed issues with Homebrew, Zsh, and oh-my-zsh during the Big Sur upgrade—steps still useful for modern macOS versions."
-pubDate: "2021-01-26"
-updatedDate: "2025-08-17"
-heroImage: "../../assets/macos-zsh.png"
-tags: ["macos", "shell", "zsh", "homebrew"]
-author: "Syed Aslam"
-canonicalURL: "https://syedaslam.com/blog/fixing-homebrew-and-zsh-issues-after-macos-upgrades"
+title: 'Fixing Homebrew & Zsh Issues After macOS Upgrades'
+description: 'Upgrading macOS often breaks command-line setups. Here’s how I fixed issues with Homebrew, Zsh, and oh-my-zsh during the Big Sur upgrade—steps still useful for modern macOS versions.'
+pubDate: '2021-01-26'
+updatedDate: '2025-08-17'
+heroImage: '../../assets/macos-zsh.png'
+tags: ['macos', 'shell', 'zsh', 'homebrew']
+author: 'Syed Aslam'
+canonicalURL: 'https://syedaslam.com/blog/fixing-homebrew--zsh-issues-after-macos-upgrades'
 ---
 
 > **Note**: This post was originally written during my upgrade from Catalina → Big Sur (2021). While macOS has since advanced (now Sequoia, 2025), the troubleshooting steps for Homebrew, Zsh, and oh-my-zsh remain broadly applicable when upgrading between versions.

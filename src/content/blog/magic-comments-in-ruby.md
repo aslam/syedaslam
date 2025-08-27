@@ -1,14 +1,15 @@
 ---
-title: "Magic Comments in Ruby"
+title: 'Magic Comments in Ruby'
 description: "Ruby supports file-level 'magic comments' that instruct the interpreter—most famously for source encoding, but also for freezing strings, shareable constants, and indentation warnings."
-pubDate: "2021-11-15"
-updatedDate: "2025-08-20"
-heroImage: "../../assets/ruby-magic-comments.png"
-author: "Syed Aslam"
-tags: ["ruby"]
+pubDate: '2021-11-15'
+updatedDate: '2025-08-20'
+heroImage: '../../assets/ruby-magic-comments.png'
+author: 'Syed Aslam'
+tags: ['ruby']
+canonicalURL: 'https://syedaslam.com/blog/magic-comments-in-ruby/'
 ---
 
-> Note (2025):
+> **Note (2025)**:
 > Magic comments in Ruby remain relevant, but their usage has evolved:
 > `# encoding: utf-8` → Legacy. UTF-8 is default in modern Ruby, rarely needed.
 > `# frozen_string_literal: true` → Still widely used for performance and immutability. May become default in the future.
