@@ -1,5 +1,4 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE_TITLE } from "../config";
 ---
@@ -9,8 +8,6 @@ import { SITE_TITLE } from "../config";
 	description="Learn more about me and my journey in technology and development."
 	sideBarActiveItemID="about"
 >
-	<BaseHead title={`About - ${SITE_TITLE}`} description="Learn more about me and my journey in technology and development." />
-
 	<main class="container mx-auto lg:px-6 px-6 py-12">
 		<div class="text-center mb-12">
 			<h1 class="text-4xl lg:text-6xl font-bold mb-4">About Me</h1>
@@ -74,25 +71,6 @@ import { SITE_TITLE } from "../config";
 						<p>Open source contributions and knowledge sharing</p>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<div class="divider my-16"></div>
-
-		<section class="mb-16">
-			<h2 class="text-3xl font-bold text-center mb-12">My Blog</h2>
-			<div class="max-w-4xl mx-auto">
-				<p class="text-lg text-base-content/80 mb-6">
-					This blog serves as my digital garden where I share insights, tutorials, and thoughts 
-					about technology, development practices, and the lessons I've learned along the way. 
-					I believe in the power of sharing knowledge and hope that my experiences can help 
-					others on their own journeys.
-				</p>
-				<p class="text-lg text-base-content/80">
-					From technical deep-dives to personal reflections on the developer experience, 
-					I cover a wide range of topics that I hope will be valuable to fellow developers 
-					and technology enthusiasts.
-				</p>
 			</div>
 		</section>
 
