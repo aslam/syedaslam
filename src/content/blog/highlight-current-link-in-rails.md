@@ -1,12 +1,12 @@
 ---
-title: 'Highlighting Current Link in Rails Navigation'
-description: 'A look back at techniques for highlighting the active link in Rails navigation, with modern alternatives using current_page? and Stimulus.'
-pubDate: '2011-03-28T12:13:49+05:30'
-updatedDate: '2025-08-17T00:00:00+05:30'
-tags: ['rails', 'helpers', 'navigation']
-heroImage: '../../assets/current-link.png'
-author: 'Syed Aslam'
-canonical: 'https://syedaslam.netlify.app/highlighting-current-link-within-a-navigation-list-in-rails/'
+title: "Highlighting Current Link in Rails Navigation"
+description: "A look back at techniques for highlighting the active link in Rails navigation, with modern alternatives using current_page? and Stimulus."
+pubDate: "2011-03-28"
+updatedDate: "2025-08-17"
+tags: ["rails", "helpers", "navigation"]
+heroImage: "../../assets/current-link.png"
+author: "Syed Aslam"
+canonicalURL: "https://syedaslam.netlify.app/highlighting-current-link-within-a-navigation-list-in-rails/"
 ---
 
 > **Editor’s Note (2025):**

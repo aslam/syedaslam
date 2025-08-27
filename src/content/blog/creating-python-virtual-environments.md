@@ -1,13 +1,12 @@
 ---
-title: 'Creating Python Virtual Environments'
-description: 'Learn how to create and use Python virtual environments with venv to isolate dependencies and manage multiple projects cleanly.'
-pubDate: '2021-01-28T12:13:49+05:30'
-updatedDate: '2025-08-17T00:00:00+05:30'
-author: 'Syed Aslam'
-heroImage: '../../assets/python-venv.png'
-layout: '@/layouts/BlogPost.astro'
-tags: ['python', 'virtualenv', 'venv', 'best-practices']
-canonical: 'https://syedaslam.com/blog/creating-python-virtual-environments/'
+title: "Creating Python Virtual Environments"
+description: "Learn how to create and use Python virtual environments with venv to isolate dependencies and manage multiple projects cleanly."
+pubDate: "2021-01-28"
+updatedDate: "2025-08-17"
+author: "Syed Aslam"
+heroImage: "../../assets/python-venv.png"
+tags: ["python", "virtualenv", "venv", "best-practices"]
+canonicalURL: "https://syedaslam.com/blog/creating-python-virtual-environments/"
 ---
 
 > **Editor’s Note (Updated 2025):**

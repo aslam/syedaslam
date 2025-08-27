@@ -1,12 +1,12 @@
 ---
-title: 'Module Functions in Ruby: module_function vs extend self'
-description: 'In Ruby, modules can provide both namespacing and mixin functionality. Learn how to define module-level functions using module_function and extend self, and the differences between them.'
-pubDate: '2021-11-28T13:06:56+05:30'
-updatedDate: '2025-08-20T00:00:00+05:30'
-tags: ['ruby', 'modules']
-author: 'Syed Aslam'
-heroImage: '../../assets/ruby-modules.png'
-canonical: 'https://syedaslam.com/blog/module-functions-in-ruby'
+title: "Module Functions in Ruby: module_function vs extend self"
+description: "In Ruby, modules can provide both namespacing and mixin functionality. Learn how to define module-level functions using module_function and extend self, and the differences between them."
+pubDate: "2021-11-28"
+updatedDate: "2025-08-20"
+tags: ["ruby", "modules"]
+author: "Syed Aslam"
+heroImage: "../../assets/ruby-modules.png"
+canonicalURL: "https://syedaslam.com/blog/module-functions-in-ruby"
 ---
 
 In Ruby, **Modules** are a way of grouping together methods, classes, and constants with two major benefits:

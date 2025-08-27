@@ -1,13 +1,12 @@
 ---
-title: 'Working with HTTP Headers in Rails'
-description: 'Learn how to safely extract external HTTP headers in Rails while filtering out internal Rack and Rails environment variables.'
-pubDate: '2021-06-12T20:33:07+05:30'
-updatedDate: '2025-08-17T00:00:00+05:30'
-author: 'Syed Aslam'
-heroImage: '../../assets/http-headers.png'
-layout: '@/layouts/BlogPost.astro'
-tags: ['rails', 'http', 'headers', 'tips']
-canonical: 'https://syedaslam.com/blog/http-headers-in-rails/'
+title: "Working with HTTP Headers in Rails"
+description: "Learn how to safely extract external HTTP headers in Rails while filtering out internal Rack and Rails environment variables."
+pubDate: "2021-06-12"
+updatedDate: "2025-08-17"
+author: "Syed Aslam"
+heroImage: "../../assets/http-headers.png"
+tags: ["rails", "http", "headers", "tips"]
+canonicalURL: "https://syedaslam.com/blog/http-headers-in-rails/"
 ---
 
 > **Editor’s Note (Updated 2025):**

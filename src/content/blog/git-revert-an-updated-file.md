@@ -1,10 +1,11 @@
 ---
-title: 'Git: Revert an Updated File'
-description: 'How to remove an updated file from a pull request without deleting the file itself — ensuring your changeset stays clean and focused.'
-pubDate: 2021-02-17
-tags: ['git', 'git-revert']
-heroImage: '../../assets/git-revert.png'
-author: 'Syed Aslam'
+title: "Git: Revert an Updated File"
+description: "How to remove an updated file from a pull request without deleting the file itself — ensuring your changeset stays clean and focused."
+pubDate: "2021-02-17"
+updatedDate: "2021-02-17"
+tags: ["git", "git-revert"]
+heroImage: "../../assets/git-revert.png"
+author: "Syed Aslam"
 ---
 
 Sometimes, a file gets updated unintentionally — like when you run `bundle install` or `yarn install`, and suddenly your lock file changes. Keeping dependencies up to date is good practice, but these unrelated updates don’t belong in your feature branch.

@@ -1,12 +1,12 @@
 ---
-title: 'Retrieving a Random Row in ActiveRecord'
-description: 'Learn different ways to fetch a random row in ActiveRecord, their trade-offs in PostgreSQL and MySQL, and which method to prefer for performance.'
-pubDate: '2011-04-05T16:42:17+05:30'
-updatedDate: '2025-08-20T00:00:00+05:30'
-tags: ['rails', 'activerecord', 'sql', 'tips']
-author: 'Syed Aslam'
-heroImage: '../../assets/random-row-activerecord.png'
-canonical: 'https://syedaslam.com/blog/retrieving-random-row-active-record'
+title: "Retrieving a Random Row in ActiveRecord"
+description: "Learn different ways to fetch a random row in ActiveRecord, their trade-offs in PostgreSQL and MySQL, and which method to prefer for performance."
+pubDate: "2011-04-05"
+updatedDate: "2025-08-20"
+tags: ["rails", "activerecord", "sql", "tips"]
+author: "Syed Aslam"
+heroImage: "../../assets/random-row-activerecord.png"
+canonicalURL: "https://syedaslam.com/blog/retrieving-random-row-active-record"
 ---
 
 > **Note (2025):**

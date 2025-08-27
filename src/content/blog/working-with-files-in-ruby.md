@@ -1,12 +1,12 @@
 ---
-title: 'Working with Files in Ruby'
-description: 'Learn the basics of working with files in Ruby: opening, reading, writing, streaming, and querying file objects efficiently.'
-pubDate: '2019-12-03T23:43:26+05:30'
-updatedDate: '2025-08-20T00:00:00+05:30'
-tags: ['ruby', 'file-io']
-author: 'Syed Aslam'
-heroImage: '../../assets/files-in-ruby.png'
-canonical: 'https://syedaslam.com/blog/working-with-files-in-ruby'
+title: "Working with Files in Ruby"
+description: "Learn the basics of working with files in Ruby: opening, reading, writing, streaming, and querying file objects efficiently."
+pubDate: "2019-12-03"
+updatedDate: "2025-08-20"
+tags: ["ruby", "file-io"]
+author: "Syed Aslam"
+heroImage: "../../assets/files-in-ruby.png"
+canonicalURL: "https://syedaslam.com/blog/working-with-files-in-ruby"
 ---
 
 > **Note (2025):**

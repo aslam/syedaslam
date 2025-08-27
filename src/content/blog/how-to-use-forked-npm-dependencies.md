@@ -1,14 +1,12 @@
 ---
-title: 'How to Use Forked NPM Dependencies'
-description: 'When an NPM package is missing a feature or has a blocking bug, point your project at a maintained fork via a Git URL—plus modern alternatives like patch-package and overrides.'
-pubDate: '2020-12-08T12:50:00+05:30'
-updatedDate: '2025-08-17T00:00:00+05:30'
-author: 'Syed Aslam'
-heroImage: '../../assets/forked-npm.png'
-layout: '@/layouts/BlogPost.astro'
-tags: ['node', 'npm', 'javascript', 'web-development']
-
-canonical: 'https://syedaslam.com/blog/how-to-use-forked-npm-dependencies/'
+title: "How to Use Forked NPM Dependencies"
+description: "When an NPM package is missing a feature or has a blocking bug, point your project at a maintained fork via a Git URL—plus modern alternatives like patch-package and overrides."
+pubDate: "2020-12-08"
+updatedDate: "2025-08-17"
+author: "Syed Aslam"
+heroImage: "../../assets/forked-npm.png"
+tags: ["node", "npm", "javascript", "web-development"]
+canonicalURL: "https://syedaslam.com/blog/how-to-use-forked-npm-dependencies/"
 ---
 
 > Editor’s Note (Updated 2025):

@@ -1,13 +1,12 @@
 ---
-title: 'Centering a Fixed-Sized Element with CSS'
-description: 'Learn a classic CSS trick to center a fixed-width or fixed-height element using absolute positioning and negative margins.'
-pubDate: '2011-03-22T16:42:17+05:30'
-updatedDate: '2025-08-17T00:00:00+05:30'
-author: 'Syed Aslam'
-heroImage: '../../assets/centering-elements.png'
-layout: '@/layouts/BlogPost.astro'
-tags: ['css', 'layout']
-canonical: 'https://syedaslam.com/blog/centering-fixed-sized-elements/'
+title: "Centering a Fixed-Sized Element with CSS"
+description: "Learn a classic CSS trick to center a fixed-width or fixed-height element using absolute positioning and negative margins."
+pubDate: "2011-03-22"
+updatedDate: "2025-08-17"
+author: "Syed Aslam"
+heroImage: "../../assets/centering-elements.png"
+tags: ["css", "layout"]
+canonicalURL: "https://syedaslam.com/blog/centering-fixed-sized-elements/"
 ---
 
 Centering elements in CSS has always been a recurring challenge. Back in 2011, one reliable way to center a **fixed-width / fixed-height element** was to use **absolute positioning** and negative margins. The parent container needed `position: relative` for this to work.

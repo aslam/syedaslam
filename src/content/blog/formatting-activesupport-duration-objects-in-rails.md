@@ -1,12 +1,12 @@
 ---
-title: 'Formatting ActiveSupport::Duration Objects in Rails'
-description: 'Learn how to format ActiveSupport::Duration objects into concise, human-readable strings with locale support using the duration_in_words gem.'
-pubDate: '2023-02-04T23:42:26+05:30'
-updatedDate: '2025-08-17T00:00:00+05:30'
-author: 'Syed Aslam'
-heroImage: '../../assets/duration.png'
-tags: ['rails', 'activesupport', 'helpers']
-# canonical: "https://syedaslam.com/blog/formatting-activesupport-duration-objects/"
+title: "Formatting ActiveSupport::Duration Objects in Rails"
+description: "Learn how to format ActiveSupport::Duration objects into concise, human-readable strings with locale support using the duration_in_words gem."
+pubDate: "2023-02-04"
+updatedDate: "2025-08-17"
+author: "Syed Aslam"
+heroImage: "../../assets/duration.png"
+tags: ["rails", "activesupport", "helpers"]
+canonicalURL: "https://syedaslam.com/blog/formatting-activesupport-duration-objects/"
 ---
 
 Rails’ [`ActiveSupport::Duration`](https://api.rubyonrails.org/classes/ActiveSupport/Duration.html) objects don’t include a straightforward way to output clean, human-readable strings. By default, you’re left with [`#inspect`](https://github.com/rails/rails/blob/main/activesupport/lib/active_support/duration.rb#L444), which is limited and lost locale support after Rails 5.1.

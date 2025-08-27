@@ -1,8 +1,10 @@
 ---
-title: 'Migrating from Gridsome to Astro: A Developer Journey'
-description: 'My experience migrating my personal blog from Gridsome to Astro, including the challenges, benefits, and lessons learned along the way.'
-pubDate: '2024-01-15'
-heroImage: 'https://picsum.photos/seed/gridsome-astro/800/400'
+title: "Migrating from Gridsome to Astro: A Developer Journey"
+description: "My experience migrating my personal blog from Gridsome to Astro, including the challenges, benefits, and lessons learned along the way."
+pubDate: "2024-01-15"
+author: "Syed Aslam"
+heroImage: "../../assets/gridsome-astro.jpg"
+tags: ["astro", "gridsome", "migration"]
 ---
 
 # Migrating from Gridsome to Astro: A Developer Journey

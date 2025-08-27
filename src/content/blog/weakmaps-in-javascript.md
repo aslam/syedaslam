@@ -1,12 +1,12 @@
 ---
-title: 'WeakMaps in JavaScript'
-description: 'WeakMaps allow objects to be used as keys, offering memory efficiency and encapsulation—ideal for private data storage and avoiding memory leaks.'
-pubDate: '2022-04-24T17:30:48+05:30'
-updatedDate: '2025-08-20T00:00:00+05:30'
-tags: ['javascript', 'weakmap']
-author: 'Syed Aslam'
-heroImage: '../../assets/weakmaps-javascript.png'
-canonical: 'https://syedaslam.com/blog/weakmaps-in-javascript'
+title: "WeakMaps in JavaScript"
+description: "WeakMaps allow objects to be used as keys, offering memory efficiency and encapsulation—ideal for private data storage and avoiding memory leaks."
+pubDate: "2022-04-24"
+updatedDate: "2025-08-20"
+tags: ["javascript", "weakmap"]
+author: "Syed Aslam"
+heroImage: "../../assets/weakmaps-javascript.png"
+canonicalURL: "https://syedaslam.com/blog/weakmaps-in-javascript"
 ---
 
 > **Note (2025):**

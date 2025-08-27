@@ -1,12 +1,12 @@
 ---
-title: 'Re-initializing Table Sequences in PostgreSQL'
-description: 'Learn how to reset and reinitialize table sequences in PostgreSQL safely, whether preserving existing data or starting fresh.'
-pubDate: '2011-03-15T16:42:17+05:30'
-updatedDate: '2025-08-20T00:00:00+05:30'
-tags: ['postgresql', 'sequence', 'database']
-author: 'Syed Aslam'
-heroImage: '../../assets/postgresql-table-sequence.png'
-canonical: 'https://syedaslam.com/blog/reinitialize-key-sequence-postgresql'
+title: "Re-initializing Table Sequences in PostgreSQL"
+description: "Learn how to reset and reinitialize table sequences in PostgreSQL safely, whether preserving existing data or starting fresh."
+pubDate: "2011-03-15"
+updatedDate: "2025-08-20"
+tags: ["postgresql", "sequence", "database"]
+author: "Syed Aslam"
+heroImage: "../../assets/postgresql-table-sequence.png"
+canonicalURL: "https://syedaslam.com/blog/reinitialize-key-sequence-postgresql"
 ---
 
 > **Note (2025):**

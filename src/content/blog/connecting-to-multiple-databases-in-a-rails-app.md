@@ -1,12 +1,12 @@
 ---
-title: 'Connecting to Multiple Databases in a Rails App'
-description: 'Learn how to connect a Rails app to multiple databases using establish_connection, with context on modern Rails features for handling multi-DB setups.'
-pubDate: '2011-01-18T16:42:17+05:30'
-updatedDate: '2025-08-17T00:00:00+05:30'
-author: 'Syed Aslam'
-heroImage: 'https://res.cloudinary.com/syed-aslam/image/upload/w_1000/q_auto/f_auto/v1556446821/black-and-white-blurred-background-cables-1426702_msrzjl.jpg'
-tags: ['rails', 'activerecord', 'database']
-canonical: 'https://syedaslam.com/blog/connecting-to-multiple-databases/'
+title: "Connecting to Multiple Databases in a Rails App"
+description: "Learn how to connect a Rails app to multiple databases using establish_connection, with context on modern Rails features for handling multi-DB setups."
+pubDate: "2011-01-18"
+updatedDate: "2025-08-17"
+author: "Syed Aslam"
+heroImage: "https://res.cloudinary.com/syed-aslam/image/upload/w_1000/q_auto/f_auto/v1556446821/black-and-white-blurred-background-cables-1426702_msrzjl.jpg"
+tags: ["rails", "activerecord", "database"]
+canonicalURL: "https://syedaslam.com/blog/connecting-to-multiple-databases/"
 ---
 
 Traditionally, a Rails application connects to a **single database**. Models inherit from `ActiveRecord::Base`, which uses connection details from `config/database.yml` through the [`establish_connection`](http://api.rubyonrails.org/classes/ActiveRecord/Base.html#method-c-establish_connection) method.

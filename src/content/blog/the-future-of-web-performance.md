@@ -1,8 +1,10 @@
 ---
-title: 'The Future of Web Performance: Beyond Core Web Vitals'
-description: 'Exploring emerging performance metrics and optimization strategies that will shape the next generation of web applications.'
-pubDate: '2024-01-10'
-heroImage: 'https://picsum.photos/seed/web-performance/800/400'
+title: "The Future of Web Performance: Beyond Core Web Vitals"
+description: "Exploring emerging performance metrics and optimization strategies that will shape the next generation of web applications."
+pubDate: "2024-01-10"
+author: "Syed Aslam"
+heroImage: "../../assets/web-performance.jpg"
+tags: ["web-performance", "core-web-vitals"]
 ---
 
 # The Future of Web Performance: Beyond Core Web Vitals

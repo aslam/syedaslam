@@ -1,8 +1,10 @@
 ---
-title: 'Continuous Learning in Tech: Staying Relevant in a Fast-Paced Industry'
-description: 'Strategies and resources for developers to stay current with rapidly evolving technologies and maintain career growth in the tech industry.'
-pubDate: '2024-01-05'
-heroImage: 'https://picsum.photos/seed/continuous-learning/800/400'
+title: "Continuous Learning in Tech: Staying Relevant in a Fast-Paced Industry"
+description: "Strategies and resources for developers to stay current with rapidly evolving technologies and maintain career growth in the tech industry."
+pubDate: "2024-01-05"
+author: "Syed Aslam"
+heroImage: "../../assets/continuous-learning-in-tech.jpg"
+tags: ["learning", "career", "tech"]
 ---
 
 # Continuous Learning in Tech: Staying Relevant in a Fast-Paced Industry

@@ -1,11 +1,11 @@
 ---
-title: 'Loading CSV Data in Rails: Then vs Now'
-description: 'A look back at how Rails 2.x apps loaded CSV data into models, and how modern Rails apps can do it more efficiently today.'
-pubDate: '2011-02-21T16:42:17+05:30'
-updatedDate: '2025-08-17T16:45:00+05:30'
-tags: ['rails', 'ruby', 'csv', 'data-import', 'hash']
-heroImage: '../../assets/csv-import-rails.png'
-author: 'Aslam'
+title: "Loading CSV Data in Rails: Then vs Now"
+description: "A look back at how Rails 2.x apps loaded CSV data into models, and how modern Rails apps can do it more efficiently today."
+pubDate: "2011-02-21"
+updatedDate: "2025-08-17"
+tags: ["rails", "ruby", "csv", "data-import", "hash"]
+heroImage: "../../assets/csv-import-rails.png"
+author: "Syed Aslam"
 ---
 
 > **Editor’s Note (2025)**

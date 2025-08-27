@@ -1,13 +1,12 @@
 ---
-title: 'Dynamic Full Page Background Images in Rails'
-description: 'Learn how to set and randomize full-page background images in a Rails app using CSS3 and simple view helpers.'
-pubDate: '2020-07-07T17:49:26+05:30'
-updatedDate: '2025-08-17T00:00:00+05:30'
-author: 'Syed Aslam'
-heroImage: '../../assets/dynamic-backgrounds.png'
-layout: '@/layouts/BlogPost.astro'
-tags: ['rails', 'css', 'helpers']
-# canonical: "https://syedaslam.com/blog/dynamic-background-images-rails/"
+title: "Dynamic Full Page Background Images in Rails"
+description: "Learn how to set and randomize full-page background images in a Rails app using CSS3 and simple view helpers."
+pubDate: "2020-07-07"
+updatedDate: "2025-08-17"
+author: "Syed Aslam"
+heroImage: "../../assets/dynamic-backgrounds.png"
+tags: ["rails", "css", "helpers"]
+canonicalURL: "https://syedaslam.com/blog/dynamic-background-images-rails/"
 ---
 
 > **Editor’s Note (Updated 2025):**
