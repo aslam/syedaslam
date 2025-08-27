@@ -10,12 +10,16 @@ export interface Props {
 	description: string;
 	image?: string | ImageMetadata;
 	ogType?: string;
-	keywords?: string;
+	tags?: string[];
+	canonicalURL?: string;
 }
 
-const { title, description, image: rawImage = '/social_img.webp', ogType = 'website', keywords = 'software engineering, web development, javascript, ruby, python, ruby on rails, css, sql, postgresql, mysql, git, macos' } = Astro.props;
+const { title, description, image: rawImage = '/social_img.webp', ogType = 'website', tags = [], canonicalURL } = Astro.props;
 
+const defaultKeywords = 'software engineering, web development, javascript, ruby, python, ruby on rails, css, sql, postgresql, mysql, git, macos';
 const image = typeof rawImage === 'string' ? rawImage : rawImage.src;
+const keywords = [...new Set([...defaultKeywords.split(', '), ...tags])].join(', ');
+const finalCanonicalURL = canonicalURL || Astro.url;
 ---
 
 <!-- Global Metadata -->
@@ -29,19 +33,19 @@ const image = typeof rawImage === 'string' ? rawImage : rawImage.src;
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <meta name="keywords" content={keywords} />
-<link rel="canonical" href={Astro.url} />
+<link rel="canonical" href={finalCanonicalURL} />
 <meta name="robots" content="index, follow" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content={ogType} />
-<meta property="og:url" content={Astro.url} />
+<meta property="og:url" content={finalCanonicalURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:url" content={finalCanonicalURL} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
