@@ -1,14 +1,12 @@
 ---
-// Import the global.css file here so that it is included on
-// all pages through the use of the <BaseHead /> component.
-import '../styles/global.css';
-import type { getImage } from 'astro:assets'; // Removed GetImageResult import
+import type { getImage } from 'astro:assets';
+import GlobalStyles from './GlobalStyles.astro'; // Import GlobalStyles
 
 type ImageMetadata = Awaited<ReturnType<typeof getImage>>;
 export interface Props {
 	title: string;
 	description: string;
-	image?: string | ImageMetadata; // Reverted to ImageMetadata
+	image?: string | ImageMetadata;
 	ogType?: string;
 	tags?: string[];
 	canonicalURL?: string;
@@ -49,6 +47,9 @@ const finalCanonicalURL = canonicalURL || Astro.url;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Global Styles -->
+<GlobalStyles />
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-281ZFHTN30"></script>
