@@ -7,12 +7,12 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://syedaslam.com', // Update this with your actual domain
-	integrations: [mdx(), sitemap(), tailwind()],
-	markdown: {
-		shikiConfig: {
-			theme: 'github-dark',
-			wrap: true
-		}
-	}
+  site: 'https://aslam.github.io',
+  integrations: [mdx(), sitemap(), tailwind()],
+  markdown: {
+    shikiConfig: {
+      theme: 'github-dark',
+      wrap: true,
+    },
+  },
 });
