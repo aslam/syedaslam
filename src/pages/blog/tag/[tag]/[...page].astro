@@ -4,6 +4,7 @@ import BaseLayout from "../../../../layouts/BaseLayout.astro";
 import HorizontalCard from "../../../../components/HorizontalCard.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
 import createSlug from "../../../../lib/createSlug";
+import { SITE_URL } from "../../../../config"; // Import SITE_URL
 
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
   const all_posts = await getCollection("blog");
@@ -29,9 +30,11 @@ interface Props {
 
 const { page } = Astro.props as Props;
 const params = Astro.params;
+const currentTag = params.tag; // Get the current tag
+const canonicalURL = `${SITE_URL}/blog/tag/${currentTag}`; // Construct canonical URL
 ---
 
-<BaseLayout title={"Blog - " + params.tag} sideBarActiveItemID="blog">
+<BaseLayout title={"Blog - " + params.tag} tags={[currentTag]} canonicalURL={canonicalURL}>
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Blog - {params.tag}</div>
   </div>
@@ -73,7 +76,7 @@ const params = Astro.params;
             height="24"
             viewBox="0 0 24 24"
           >
-            <path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+            <path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L8.59,16.58Z" />
           </svg>{" "}
           Recent posts
         </a>

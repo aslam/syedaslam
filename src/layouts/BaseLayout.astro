@@ -7,12 +7,19 @@ import { ViewTransitions } from "astro:transitions";
 
 import { SITE_TITLE, SITE_DESCRIPTION, TRANSITION_API } from "../config";
 
+export interface Props {
+  title?: string;
+  description?: string;
+  image?: string | ImageMetadata;
+  ogType?: string;
+  tags?: string[];
+}
+
 const {
   image,
   title = SITE_TITLE,
   description = SITE_DESCRIPTION,
   includeSidebar = true,
-  sideBarActiveItemID,
   ogType,
   tags = [],
 } = Astro.props;
@@ -36,7 +43,7 @@ const {
         </div>
         <Footer />
       </div>
-      {includeSidebar && <SideBar sideBarActiveItemID={sideBarActiveItemID} />}
+      {includeSidebar && <SideBar />}
     </div>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
