@@ -28,9 +28,11 @@ interface Props {
   page: Page<CollectionEntry<"blog">>;
 }
 
-const { page } = Astro.props as Props;
+const { page } = Astro.props; // Removed 'as Props' here
+const typedPage = page as Page<CollectionEntry<"blog">>; // Assert type separately
+
 const params = Astro.params;
-const currentTag = params.tag; // Get the current tag
+const currentTag = params.tag as string; // Add 'as string' to assert type
 const canonicalURL = `${SITE_URL}/blog/tag/${currentTag}`; // Construct canonical URL
 ---
 
@@ -39,14 +41,14 @@ const canonicalURL = `${SITE_URL}/blog/tag/${currentTag}`; // Construct canonica
     <div class="text-3xl w-full font-bold">Blog - {params.tag}</div>
   </div>
   {
-    page.data.length === 0 ? (
+    typedPage.data.length === 0 ? (
       <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
         <p class="font-bold">Sorry!</p>
         <p>There are no blog posts to show at the moment. Check back later!</p>
       </div>
     ) : (
       <ul>
-        {page.data.map((post) => (
+        {typedPage.data.map((post) => (
           <>
             <HorizontalCard
               title={post.data.title}
@@ -66,8 +68,8 @@ const canonicalURL = `${SITE_URL}/blog/tag/${currentTag}`; // Construct canonica
 
   <div class="flex justify-between">
     {
-      page.url.prev ? (
-        <a href={page.url.prev} class="btn btn-ghost my-10 mx-5">
+      typedPage.url.prev ? (
+        <a href={typedPage.url.prev} class="btn btn-ghost my-10 mx-5">
           {" "}
           <svg
             class="h-6 w-6 fill-current md:h-8 md:w-8"
@@ -85,8 +87,8 @@ const canonicalURL = `${SITE_URL}/blog/tag/${currentTag}`; // Construct canonica
       )
     }
     {
-      page.url.next ? (
-        <a href={page.url.next} class="btn btn-ghost my-10 mx-5">
+      typedPage.url.next ? (
+        <a href={typedPage.url.next} class="btn btn-ghost my-10 mx-5">
           Older Posts{" "}
           <svg
             class="h-6 w-6 fill-current md:h-8 md:w-8"
