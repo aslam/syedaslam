@@ -6,6 +6,7 @@ import SideBar from "../components/SideBar.astro";
 import { ViewTransitions } from "astro:transitions";
 
 import { SITE_TITLE, SITE_DESCRIPTION, TRANSITION_API } from "../config";
+import '../styles/global.css'; // Import global.css here
 
 export interface Props {
   title?: string;
@@ -42,7 +43,7 @@ const {
           <main class="p-6 pt-10 lg:max-w-[900px] max-w-[100vw]">
             <slot />
           </main>
-        </div>
+        }
         <Footer />
       </div>
       {includeSidebar && <SideBar />}
