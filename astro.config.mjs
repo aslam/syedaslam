@@ -5,6 +5,10 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import { defineConfig } from 'astro/config';
 
+// Import PostCSS plugins using ES Module syntax
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://aslam.github.io',
@@ -20,8 +24,8 @@ export default defineConfig({
     css: {
       postcss: {
         plugins: [
-          require('tailwindcss'),
-          require('autoprefixer'),
+          tailwindcss, // Use the imported module directly
+          autoprefixer, // Use the imported module directly
         ],
       },
     },
