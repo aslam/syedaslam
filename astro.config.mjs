@@ -26,18 +26,18 @@ export default defineConfig({
     },
   },
   vite: {
-    css: {
-      postcss: {
-        plugins: [tailwindcss, autoprefixer],
-      },
-    },
     build: {
       rollupOptions: {
         output: {
-          assetFileNames: 'assets/[name].[hash][extname]',
-          chunkFileNames: 'assets/[name].[hash].js',
-          entryFileNames: 'assets/[name].[hash].js',
+          assetFileNames: '_astro/[name].[hash][extname]',
+          chunkFileNames: '_astro/[name].[hash].js',
+          entryFileNames: '_astro/[name].[hash].js',
         },
+      },
+    },
+    css: {
+      postcss: {
+        plugins: [tailwindcss, autoprefixer],
       },
     },
   },
