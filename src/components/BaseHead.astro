@@ -1,5 +1,6 @@
 ---
 import type { getImage } from 'astro:assets';
+import GlobalStyles from './GlobalStyles.astro'; // Import GlobalStyles
 
 type ImageMetadata = Awaited<ReturnType<typeof getImage>>;
 export interface Props {
@@ -46,6 +47,9 @@ const finalCanonicalURL = canonicalURL || Astro.url;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Global Styles -->
+<GlobalStyles />
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-281ZFHTN30"></script>

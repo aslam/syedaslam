@@ -16,4 +16,14 @@ export default defineConfig({
       wrap: true,
     },
   },
+  vite: { // Add this vite section
+    css: {
+      postcss: {
+        plugins: [
+          require('tailwindcss'),
+          require('autoprefixer'),
+        ],
+      },
+    },
+  },
 });
