@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import { SITE_TITLE } from "../config";
+import profileImage from "../assets/profile.png";
 ---
 
 <BaseLayout
@@ -30,7 +31,7 @@ import { SITE_TITLE } from "../config";
 			<div class="text-center">
 				<div class="avatar transition ease-in-out hover:scale-[102%] block m-auto">
 					<div class="w-32">
-						<Image class="mask mask-circle" format="webp" width={128} height={128} src="/profile.png" alt="Profile image" />
+						<Image class="mask mask-circle" format="webp" width={128} height={128} src={profileImage} alt="Profile image" />
 					</div>
 				</div>
 			</div>
