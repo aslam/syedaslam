@@ -8,6 +8,7 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://aslam.github.io',
+  base: '/syedaslam',
   integrations: [mdx(), sitemap(), tailwind()],
   markdown: {
     shikiConfig: {
