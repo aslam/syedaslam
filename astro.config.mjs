@@ -11,6 +11,7 @@ import autoprefixer from 'autoprefixer';
 
 // https://astro.build/config
 export default defineConfig({
+  output: 'static',
   site: 'https://aslam.github.io',
   base: '/syedaslam',
   integrations: [mdx(), sitemap(), tailwind()],
@@ -20,13 +21,10 @@ export default defineConfig({
       wrap: true,
     },
   },
-  vite: { // Add this vite section
+  vite: {
     css: {
       postcss: {
-        plugins: [
-          tailwindcss, // Use the imported module directly
-          autoprefixer, // Use the imported module directly
-        ],
+        plugins: [tailwindcss, autoprefixer],
       },
     },
   },
