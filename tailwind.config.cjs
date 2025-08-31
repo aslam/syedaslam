@@ -12,4 +12,19 @@ module.exports = {
     darkTheme: 'dark', // name of one of the included themes for dark mode
     logs: false, // Shows info about daisyUI version and used config in the console when building your CSS
   },
+  safelist: [
+    'drawer',
+    'drawer-side',
+    'drawer-content',
+    'drawer-toggle',
+    'drawer-overlay',
+    'drawer-open',
+    'lg:drawer-open',
+    'menu',
+    'badge',
+    'badge-outline',
+    'badge-secondary',
+    'hero-content',
+    'card-actions'
+  ],
 };
