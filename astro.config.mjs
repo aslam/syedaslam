@@ -12,8 +12,7 @@ import autoprefixer from 'autoprefixer';
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
-  site: 'https://aslam.github.io',
-  base: '/syedaslam',
+  site: 'https://syedaslam.com',
   trailingSlash: 'never',
   build: {
     assets: '_astro',

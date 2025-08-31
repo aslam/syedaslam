@@ -25,9 +25,6 @@ jobs:
         with:
           path: . # The root location of your Astro project inside the repository
           node-version: 20 # The specific version of Node that should be used to build your site
-        env:
-          # Ensure the base path is respected during build
-          BASE_PATH: /syedaslam
 
   deploy:
     needs: build
