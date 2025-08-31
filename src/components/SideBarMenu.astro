@@ -1,5 +1,5 @@
 ---
-const activeClass = "bg-base-300"; // For primary color replace with `active` class
+const activeClass = "bg-primary text-primary-content"; // Use primary color for active state
 ---
 
 <ul class="menu grow shrink menu-md overflow-y-auto">
@@ -10,17 +10,35 @@ const activeClass = "bg-base-300"; // For primary color replace with `active` cl
 </ul>
 
 <script define:vars={{ activeClass: activeClass }}>
-  document.addEventListener('astro:page-load', () => {
+  // Function to highlight active menu item
+  function highlightActiveMenuItem() {
     const currentPath = window.location.pathname;
     const menuItems = document.querySelectorAll('.menu a');
 
     menuItems.forEach(item => {
       const href = item.getAttribute('href');
-      if (href && (currentPath === href || (currentPath.startsWith(href) && href !== '/'))) {
-        item.classList.add(activeClass);
-      } else {
+      if (href) {
+        // Remove active class from all items first
         item.classList.remove(activeClass);
+        
+        // Check if this item should be active
+        if (currentPath === href || (currentPath.startsWith(href) && href !== '/')) {
+          item.classList.add(activeClass);
+        }
       }
     });
-  });
+  }
+
+  // Run on initial page load
+  document.addEventListener('DOMContentLoaded', highlightActiveMenuItem);
+  
+  // Run on Astro page transitions
+  document.addEventListener('astro:page-load', highlightActiveMenuItem);
+  
+  // Also run immediately in case DOM is already loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', highlightActiveMenuItem);
+  } else {
+    highlightActiveMenuItem();
+  }
 </script>
