@@ -1,5 +1,5 @@
 ---
-const activeClass = "bg-primary text-primary-content"; // Use primary color for active state
+const activeClasses = ["bg-primary", "text-primary-content"]; // Split classes into array
 ---
 
 <ul class="menu grow shrink menu-md overflow-y-auto">
@@ -9,7 +9,7 @@ const activeClass = "bg-primary text-primary-content"; // Use primary color for 
     <li><a class="py-3 text-base" id="about" href="/about">About</a></li>
 </ul>
 
-<script define:vars={{ activeClass: activeClass }}>
+<script define:vars={{ activeClasses: activeClasses }}>
   // Function to highlight active menu item
   function highlightActiveMenuItem() {
     const currentPath = window.location.pathname;
@@ -18,12 +18,17 @@ const activeClass = "bg-primary text-primary-content"; // Use primary color for 
     menuItems.forEach(item => {
       const href = item.getAttribute('href');
       if (href) {
-        // Remove active class from all items first
-        item.classList.remove(activeClass);
+        // Remove active classes from all items first
+        activeClasses.forEach(className => {
+          item.classList.remove(className);
+        });
         
         // Check if this item should be active
         if (currentPath === href || (currentPath.startsWith(href) && href !== '/')) {
-          item.classList.add(activeClass);
+          // Add active classes
+          activeClasses.forEach(className => {
+            item.classList.add(className);
+          });
         }
       }
     });
