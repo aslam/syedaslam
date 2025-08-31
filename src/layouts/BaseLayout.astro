@@ -4,8 +4,11 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import SideBar from "../components/SideBar.astro";
 import { ViewTransitions } from "astro:transitions";
+import type { getImage } from "astro:assets";
 
 import { SITE_TITLE, SITE_DESCRIPTION, TRANSITION_API } from "../config";
+
+type ImageMetadata = Awaited<ReturnType<typeof getImage>>;
 
 export interface Props {
   title?: string;
@@ -42,7 +45,7 @@ const {
           <main class="p-6 pt-10 lg:max-w-[900px] max-w-[100vw]">
             <slot />
           </main>
-        }
+        </div>
         <Footer />
       </div>
       {includeSidebar && <SideBar />}
