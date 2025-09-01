@@ -1,49 +1,27 @@
 ---
-const activeClasses = ["bg-primary", "text-primary-content"]; // Split classes into array
+const { sideBarActiveItemID } = Astro.props;
+const activeClass = 'bg-base-300'; // For primary color replace with `active` class
 ---
 
 <ul class="menu grow shrink menu-md overflow-y-auto">
-    <li><a class="py-3 text-base" id="home" href="/">Home</a></li>
-    <li><a class="py-3 text-base" id="projects" href="/projects">Projects</a></li>
-    <li><a class="py-3 text-base" id="blog" href="/blog/">Blog</a></li>
-    <li><a class="py-3 text-base" id="about" href="/about">About</a></li>
+  <li><a class="py-3 text-base" id="home" href="/">Home</a></li>
+  <li>
+    <a class="py-3 text-base" id="projects" href="/projects"
+      >Projects</a
+    >
+  </li>
+  <li><a class="py-3 text-base" id="blog" href="/blog/">Blog</a></li>
+  <li>
+    <a class="py-3 text-base" id="about" href="/about">About</a>
+  </li>
 </ul>
 
-<script define:vars={{ activeClasses: activeClasses }}>
-  // Function to highlight active menu item
-  function highlightActiveMenuItem() {
-    const currentPath = window.location.pathname;
-    const menuItems = document.querySelectorAll('.menu a');
-
-    menuItems.forEach(item => {
-      const href = item.getAttribute('href');
-      if (href) {
-        // Remove active classes from all items first
-        activeClasses.forEach(className => {
-          item.classList.remove(className);
-        });
-        
-        // Check if this item should be active
-        if (currentPath === href || (currentPath.startsWith(href) && href !== '/')) {
-          // Add active classes
-          activeClasses.forEach(className => {
-            item.classList.add(className);
-          });
-        }
-      }
-    });
-  }
-
-  // Run on initial page load
-  document.addEventListener('DOMContentLoaded', highlightActiveMenuItem);
-  
-  // Run on Astro page transitions
-  document.addEventListener('astro:page-load', highlightActiveMenuItem);
-  
-  // Also run immediately in case DOM is already loaded
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', highlightActiveMenuItem);
-  } else {
-    highlightActiveMenuItem();
-  }
+<script
+  define:vars={{
+    sideBarActiveItemID: sideBarActiveItemID,
+    activeClass: activeClass,
+  }}
+>
+  const activeItemElem = document.getElementById(sideBarActiveItemID);
+  activeItemElem && activeItemElem.classList.add(activeClass);
 </script>
