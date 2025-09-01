@@ -7,6 +7,10 @@ export const SITE_URL = 'https://syedaslam.com';
 export const GENERATE_SLUG_FROM_TITLE = true;
 export const TRANSITION_API = true;
 
+export const SITE_AUTHOR = 'Syed Aslam';
+export const SITE_TWITTER = '@syedaslam';
+export const SITE_GITHUB = 'aslam';
+
 export const SITE = {
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
@@ -31,46 +35,3 @@ export const KNOWN_LANGUAGES = {
 };
 
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
-
-export const GITHUB_EDIT_URL = `https://github.com/aslam/syedaslam`;
-
-export const COMMUNITY_INVITE_URL = `https://astro.build/chat`;
-
-export const SIDEBAR = [
-  {
-    text: 'Pages',
-    header: true,
-  },
-  {
-    text: 'Blog',
-    header: true,
-    items: [
-      {
-        text: 'All Posts',
-        link: 'blog',
-      },
-    ],
-  },
-  {
-    text: 'More',
-    header: true,
-    items: [
-      {
-        text: 'RSS',
-        link: '/rss.xml',
-      },
-    ],
-  },
-];
-
-export const SIDEBAR_NAVIGATION = [
-  {
-    text: 'Get Started',
-    items: [
-      {
-        text: 'Introduction',
-        link: 'blog/introduction/',
-      },
-    ],
-  },
-];

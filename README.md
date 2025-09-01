@@ -54,7 +54,7 @@ syedaslam/
 │   ├── layouts/             # Page layouts
 │   ├── pages/               # Astro pages (routes)
 │   ├── styles/              # Global CSS styles
-│   └── consts.ts            # Site constants and configuration
+│   └── config.ts            # Site constants and configuration
 ├── public/                  # Static assets
 ├── astro.config.mjs         # Astro configuration
 └── package.json
@@ -99,7 +99,7 @@ Write your content in Markdown...
 
 ### Site Configuration
 
-Update `src/consts.ts` to customize your site:
+Update `src/config.ts` to customize your site:
 
 ```typescript
 export const SITE_TITLE = 'Your Name';
