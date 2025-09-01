@@ -1,9 +1,7 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-
-export const SITE_TITLE = 'Syed Aslam';
+export const SITE_TITLE =
+  'Syed Aslam | Personal Portfolio Website of Syed Aslam';
 export const SITE_DESCRIPTION =
-  'Personal blog about technology, development, and thoughts on life.';
+  'Personal portfolio website of Syed Aslam and a blog about technology, development, and thoughts on life.';
 export const SITE_URL = 'https://syedaslam.com';
 
 export const GENERATE_SLUG_FROM_TITLE = true;
