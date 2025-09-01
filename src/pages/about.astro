@@ -1,114 +1,114 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { Image } from "astro:assets";
-import { SITE_TITLE } from "../config";
-import profileImage from "../assets/profile.png";
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import { SITE_TITLE } from '../config';
+import profileImage from '../assets/profile.png';
 ---
 
 <BaseLayout
-	title={`About - ${SITE_TITLE}`}
-	description="Learn more about me and my journey in technology and development."
+  title={`About - ${SITE_TITLE}`}
+  description="Learn more about me and my journey in technology and development."
+  sideBarActiveItemID="about"
 >
-	<main class="container mx-auto lg:px-6 px-6 py-12">
-		<div class="text-center mb-12">
-			<h1 class="text-4xl lg:text-6xl font-bold mb-4">About Me</h1>
-			<p class="text-xl lg:text-2xl text-base-content/80">
-				Hi, I'm <span class="text-primary">Syed Aslam</span> 👋
-			</p>
-		</div>
+  <main class="container mx-auto lg:px-6 px-6 py-12">
+    <div class="text-left mb-12">
+      <h1 class="text-4xl lg:text-6xl font-bold mb-4">About Me</h1>
+      <p class="text-xl lg:text-2xl text-base-content/80">
+        Hi, I'm <span class="text-primary">Syed Aslam</span> 👋
+      </p>
+    </div>
 
-		<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-			<div>
-				<h2 class="text-3xl font-bold mb-6">Who I Am</h2>
-				<p class="text-lg text-base-content/80 mb-4">
-					I'm Syed Aslam, a passionate software engineer with over a decade of experience crafting robust and scalable web applications. My journey began with a fascination for how technology solves real-world problems, evolving into a dedication to building elegant and efficient solutions.
-				</p>
-				<p class="text-lg text-base-content/80">
-					I thrive on continuous learning and embracing new challenges. My expertise spans full-stack development, with a strong focus on Ruby on Rails, JavaScript (React, Node.js), and Python. I'm also deeply interested in cloud architecture, database optimization, and fostering best practices in software development.
-				</p>
-			</div>
-			<div class="text-center">
-				<div class="avatar transition ease-in-out hover:scale-[102%] block m-auto">
-					<div class="w-32">
-						<Image class="mask mask-circle" format="webp" width={128} height={128} src={profileImage} alt="Profile image" />
-					</div>
-				</div>
-			</div>
-		</div>
+    <div class="items-center mb-16">
+      <div>
+        <h2 class="text-3xl font-bold mb-6">Who I Am</h2>
+        <p class="text-lg text-base-content/80 mb-4">
+          I'm Syed Aslam, a passionate software engineer with over a
+          decade of experience crafting robust and scalable web
+          applications. My journey began with a fascination for how
+          technology solves real-world problems, evolving into a
+          dedication to building elegant and efficient solutions.
+        </p>
+        <p class="text-lg text-base-content/80">
+          I thrive on continuous learning and embracing new
+          challenges. My expertise spans full-stack development, with
+          a strong focus on Ruby on Rails, JavaScript (React,
+          Node.js), and Python. I'm also deeply interested in cloud
+          architecture, database optimization, and fostering best
+          practices in software development.
+        </p>
+      </div>
+    </div>
 
-		<div class="divider my-16"></div>
+    <div class="divider my-16"></div>
 
-		<section class="mb-16">
-			<h2 class="text-3xl font-bold text-center mb-12">What I Do</h2>
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-				<div class="card bg-base-100 shadow-xl">
-					<div class="card-body text-center">
-						<div class="text-4xl mb-4">💻</div>
-						<h3 class="card-title justify-center">Software Development</h3>
-						<p>Building high-quality, scalable web applications and APIs using modern frameworks and agile methodologies.</p>
-					</div>
-				</div>
-				<div class="card bg-base-100 shadow-xl">
-					<div class="card-body text-center">
-						<div class="text-4xl mb-4">☁️</div>
-						<h3 class="card-title justify-center">Cloud & DevOps</h3>
-						<p>Designing and implementing cloud-native solutions, CI/CD pipelines, and infrastructure as code for seamless deployments.</p>
-					</div>
-				</div>
-				<div class="card bg-base-100 shadow-xl">
-					<div class="card-body text-center">
-						<div class="text-4xl mb-4">💡</div>
-						<h3 class="card-title justify-center">Technical Leadership</h3>
-						<p>Mentoring teams, driving technical strategy, and ensuring architectural excellence in complex projects.</p>
-					</div>
-				</div>
-				<div class="card bg-base-100 shadow-xl">
-					<div class="card-body text-center">
-						<div class="text-4xl mb-4">✍️</div>
-						<h3 class="card-title justify-center">Content Creation</h3>
-						<p>Sharing insights, tutorials, and best practices on my blog to contribute to the developer community.</p>
-					</div>
-				</div>
-			</div>
-		</section>
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-left mb-12">
+        My Blog: A Digital Garden of Knowledge
+      </h2>
+      <div class="max-w-4xl mx-auto">
+        <p class="text-lg text-base-content/80 mb-6">
+          This blog is my personal space to explore and share my
+          passion for software engineering. Here, you'll find articles
+          ranging from deep technical dives into Ruby on Rails,
+          JavaScript, and Python, to discussions on software
+          architecture, career growth, and the latest industry trends.
+        </p>
+        <p class="text-lg text-base-content/80">
+          My goal is to provide valuable insights and practical tips
+          that can help fellow developers navigate their own journeys.
+          Whether you're a seasoned pro or just starting out, I hope
+          you find something here that sparks your curiosity or helps
+          you solve a challenge.
+        </p>
+      </div>
+    </section>
 
-		<div class="divider my-16"></div>
+    <div class="divider my-16"></div>
 
-		<section class="mb-16">
-			<h2 class="text-3xl font-bold text-center mb-12">My Blog: A Digital Garden of Knowledge</h2>
-			<div class="max-w-4xl mx-auto">
-				<p class="text-lg text-base-content/80 mb-6">
-					This blog is my personal space to explore and share my passion for software engineering. Here, you'll find articles ranging from deep technical dives into Ruby on Rails, JavaScript, and Python, to discussions on software architecture, career growth, and the latest industry trends.
-				</p>
-				<p class="text-lg text-base-content/80">
-					My goal is to provide valuable insights and practical tips that can help fellow developers navigate their own journeys. Whether you're a seasoned pro or just starting out, I hope you find something here that sparks your curiosity or helps you solve a challenge.
-				</p>
-			</div>
-		</section>
-
-		<div class="divider my-16"></div>
-
-		<section>
-			<h2 class="text-3xl font-bold text-center mb-12">Let's Connect!</h2>
-			<div class="text-center">
-				<p class="text-xl text-base-content/80 mb-8">
-					I'm always eager to connect with fellow engineers, tech enthusiasts, and anyone passionate about building great software. Feel free to reach out if you have questions, want to collaborate, or just want to chat about technology!
-				</p>
-				<div class="flex gap-4 justify-center flex-wrap">
-					<a href="mailto:aslam.maqsood@gmail.com" class="btn btn-primary">
-						📧 Email Me
-					</a>
-					<a href="https://github.com/aslam" class="btn btn-outline" target="_blank" rel="noopener">
-						🐙 GitHub
-					</a>
-					<a href="https://twitter.com/syedaslam" class="btn btn-outline" target="_blank" rel="noopener">
-						🐦 Twitter
-					</a>
-					<a href="https://linkedin.com/in/syedaslam" class="btn btn-outline" target="_blank" rel="noopener">
-						💼 LinkedIn
-					</a>
-				</div>
-			</div>
-		</section>
-	</main>
+    <section>
+      <h2 class="text-3xl font-bold text-center mb-12">
+        Let's Connect!
+      </h2>
+      <div class="text-center">
+        <p class="text-xl text-base-content/80 mb-8">
+          I'm always eager to connect with fellow engineers, tech
+          enthusiasts, and anyone passionate about building great
+          software. Feel free to reach out if you have questions, want
+          to collaborate, or just want to chat about technology!
+        </p>
+        <div class="flex gap-4 justify-center flex-wrap">
+          <a
+            href="mailto:aslam.maqsood@gmail.com"
+            class="btn btn-primary"
+          >
+            📧 Email Me
+          </a>
+          <a
+            href="https://github.com/aslam"
+            class="btn btn-outline"
+            target="_blank"
+            rel="noopener"
+          >
+            🐙 GitHub
+          </a>
+          <a
+            href="https://twitter.com/syedaslam"
+            class="btn btn-outline"
+            target="_blank"
+            rel="noopener"
+          >
+            🐦 Twitter
+          </a>
+          <a
+            href="https://linkedin.com/in/syedaslam"
+            class="btn btn-outline"
+            target="_blank"
+            rel="noopener"
+          >
+            💼 LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 </BaseLayout>

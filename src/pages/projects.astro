@@ -1,33 +1,56 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { SITE_TITLE } from "../config";
-import { Image } from "astro:assets"; // Import Image component
-import durationImage from "../assets/duration.png"; // Import the image
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_TITLE } from '../config';
+import { Image } from 'astro:assets'; // Import Image component
+import durationImage from '../assets/duration.png'; // Import the image
 ---
 
 <BaseLayout
   title={`Projects - ${SITE_TITLE}`}
   description="A list of side projects I am working on."
+  sideBarActiveItemID="projects"
 >
   <main class="container mx-auto lg:px-6 px-6 py-12">
-    <div class="text-center mb-12">
-      <h1 class="text-4xl lg:text-6xl font-bold mb-4">My Side Projects</h1>
+    <div class="text-left mb-12">
+      <h1 class="text-4xl lg:text-6xl font-bold mb-4">
+        My Side Projects
+      </h1>
       <p class="text-xl lg:text-2xl text-base-content/80">
-        Here are some of the side projects I'm currently working on or have built.
+        Here are some of the side projects I'm currently working on or
+        have built.
       </p>
     </div>
 
-    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+    <section
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
+    >
       <div class="card bg-base-100 shadow-xl h-full min-h-[300px]">
         <figure class="overflow-hidden">
-          <Image src={durationImage} alt="Project Image" width={400} height={200} class="w-full" />
+          <Image
+            src={durationImage}
+            alt="Project Image"
+            width={400}
+            height={200}
+            class="w-full"
+          />
         </figure>
         <div class="card-body">
           <h2 class="card-title">duration_in_words gem</h2>
-          <p>A Ruby gem to format <code>ActiveSupport::Duration</code> objects into concise, human-readable strings with locale support.</p>
+          <p>
+            A Ruby gem to format <code>ActiveSupport::Duration</code> objects
+            into concise, human-readable strings with locale support.
+          </p>
           <div class="card-actions justify-between">
-            <a href="https://github.com/aslam/duration_in_words" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            <a href="blog/formatting-activesupportduration-objects-in-rails" class="btn btn-outline">Read Blog Post</a>
+            <a
+              href="https://github.com/aslam/duration_in_words"
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer">View on GitHub</a
+            >
+            <a
+              href="blog/formatting-activesupportduration-objects-in-rails"
+              class="btn btn-outline">Read Blog Post</a
+            >
           </div>
         </div>
       </div>
